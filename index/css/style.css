@@ -33,10 +33,6 @@ h6 {
 	font-size: 12px;
 }
 
-img {
-	border: none;
-}
-
 ul,
 li {
 	list-style: none;
@@ -102,10 +98,6 @@ a {
 
 /* 栏目导航 */
 .column_navigation {
-	z-index: 10000;
-	display: none;
-	height: 38px;
-	background: url(../images/lmdh_bg.png) repeat-x 0 0;
 	position: fixed;
 	top: 0px;
 	width: 100%;
