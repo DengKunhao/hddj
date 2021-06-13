@@ -2129,9 +2129,9 @@ div.activity_images .atlas2 li .atlas2_images {
 }
 
 .popup .popup-content {
-	width: 1140px;
-	height: 640px;
-	background: url(../images/popup_bg.png) no-repeat;
+	width: 600px;
+	height: 900px;
+	background: url(../data/popup.png) no-repeat;
 	position: relative;
 }
 
