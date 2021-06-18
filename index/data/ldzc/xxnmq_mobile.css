@@ -129,30 +129,28 @@ a {
 }
 
 /* 文本内容 */
-@media screen and (max-width: 838px) {
-	.word_content {
-		max-width: 685px;
-		margin: 0 auto;
-		background-color: white;
-		font-family: 微软雅黑;
-		font-size: 16px;
-	}
+.word_content {
+	max-width: 685px;
+	margin: 0 auto;
+	background-color: white;
+	font-family: 微软雅黑;
+	font-size: 16px;
+}
 
-	.word_content p {
-		font-family: 宋体;
-		font-size: 18px;
-		line-height: 36px;
-		text-indent: 2em;
-		margin-bottom: 1em;
-		margin-block-start: 1em;
-		margin-block-end: 1em;
-		margin-inline-start: 0px;
-		margin-inline-end: 0px;
-	}
+.word_content p {
+	font-family: 宋体;
+	font-size: 18px;
+	line-height: 36px;
+	text-indent: 2em;
+	margin-bottom: 1em;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
 
-	.word_content a:hover {
-		text-decoration: none;
-	}
+.word_content a:hover {
+	text-decoration: none;
 }
 
 /* 页尾 */
