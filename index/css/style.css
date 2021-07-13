@@ -83,7 +83,6 @@ a {
 .hddj-club {
 	top: 0px;
 	position: relative;
-	padding-top: 190px;
 	padding-top: 150px;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -118,7 +117,7 @@ a {
 	height: 40px;
 	margin: 0 auto;
 	text-align: center;
-	background: #005292;
+	background: #083b90;
 	z-index: 10000;
 	/* 适应IE6 */
 	_position: absolute;
@@ -216,9 +215,139 @@ a {
 	margin: 0 auto 25px;
 }
 
-/*.slider-carousel .titBg{
-		position: initial;
-	}*/
+/* slider-carousel(独立CSS文件改版整合导入) */
+.slider-carousel {
+	position: relative;
+	width: 100%;
+	height: 646px;
+	overflow: hidden;
+}
+
+.slider-carousel .item {
+	width: 100%;
+	height: 646px
+}
+
+.slider-carousel .slidesjs-navigation {
+	width: 42px;
+	height: 69px;
+	display: none;
+	position: absolute;
+	text-indent: -9999em;
+	top: 280px;
+	z-index: 100;
+}
+
+.slider-carousel .subtitle-background {
+	background: #083b90;
+	position: absolute;
+	/* position: initial; */
+	width: 100%;
+	height: 36px;
+	left: 0;
+	bottom: 0px;
+	z-index: 1
+}
+
+.slider-carousel .subtitle {
+	position: absolute;
+	width: 800px;
+	height: 36px;
+	left: 0;
+	bottom: 0px;
+	z-index: 2;
+	background: #083b90;
+}
+
+.slider-carousel .subtitle h6 {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	height: 36px;
+	line-height: 36px;
+	overflow: hidden;
+	background: #083b90;
+}
+
+.slider-carousel .subtitle h6 a {
+	text-decoration: none;
+	font-weight: normal;
+	color: #fff;
+	font-size: 18px;
+	overflow: hidden;
+	margin-left: 50px;
+	font-family: "微软雅黑", "宋体";
+	_margin-left: 25px;
+}
+
+.slider-carousel .subtitle h6 a:hover {
+	text-decoration: none;
+	font-weight: normal;
+	color: #fff;
+	font-size: 18px;
+	overflow: hidden;
+	margin-left: 50px;
+	font-family: "微软雅黑", "宋体";
+	_margin-left: 25px;
+}
+
+/* javascript调用样式 */
+/* 切换按钮 */
+.slidesjs-previous {
+	background: url(../images/icon-dtgd_tpqh_left.png) no-repeat;
+	left: 0px
+}
+
+.slidesjs-next {
+	background: url(../images/icon-dtgd_tpqh_right.png) no-repeat;
+	right: 0px
+}
+
+.slidesjs-previous:hover {
+	background: url(../images/icon-dtgd_tpqh_left.png) no-repeat;
+}
+
+.slidesjs-next:hover {
+	background: url(../images/icon-dtgd_tpqh_right.png) no-repeat;
+}
+
+.slidesjs-pagination {
+	overflow: hidden;
+	zoom: 1;
+	position: absolute;
+	right: 36px;
+	top: 622px;
+	width: 110px;
+	height: 12px;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.slidesjs-pagination-item {
+	float: left;
+	width: 20px;
+	height: 10px;
+}
+
+.slidesjs-pagination-item a {
+	float: left;
+	display: block;
+	width: 12px;
+	height: 12px;
+	text-indent: -9999em;
+	margin: 0 5px 0 5px;
+	background: url(../images/icon-subtitle_circle1.png) no-repeat;
+	_margin: 0 2px 0 2px;
+}
+
+.slidesjs-pagination-item a.active {
+	background: url(../images/icon-subtitle_circle2.png) no-repeat;
+	_margin: 0 2px 0 2px;
+}
+
+/* 不加此样式文字内容无法显示 */
+.slidesjs-container{ overflow:visible !important}
+/* javascript调用样式结束 */
 
 /* 第一个模块 */
 .first_module {
