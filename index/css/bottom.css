@@ -2,7 +2,7 @@
 
 body{background:#f2f2f2;}
 .footer_con{width:1100px; margin:0 auto; background:#fff;}
-.footer{margin:0px auto 0px auto;padding:0px;border-top:8px solid #00558F;width:1028px;background:#FFF;overflow:hidden;}
+.footer{margin:0px auto 0px auto;padding:0px;border-top:8px solid #083b90;width:1028px;background:#FFF;overflow:hidden;}/* .footer{margin:0px auto 0px auto;padding:0px;border-top:8px solid #00558F;width:1028px;background:#FFF;overflow:hidden;} */
 .footer_content{padding-top:22px; padding-left:20px; height:174px;}
 .footer_content_rf .fl{padding-right:20px;}
 .footer_content_rf p{font: normal 16px/24px "microsoft yahei";width: 82px;padding: 4px 8px 0px;}
