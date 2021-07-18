@@ -243,6 +243,7 @@ a {
 
 /* 底部 */
 .footer {
+	width: 100%;
 	background: #083b90;
 	float: none;
 }
