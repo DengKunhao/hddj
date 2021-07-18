@@ -201,12 +201,7 @@ a {
 	margin-top: 16px;
 }
 
-.col {
-	float: left;
-	width: 668px;
-}
-
-.col-full {
+.article_content {
 	float: none;
 	width: 938px;
 }
@@ -249,6 +244,7 @@ a {
 /* 底部 */
 .footer {
 	background: #083b90;
+	float: none;
 }
 .site-footer {
 	padding: 2.5em 0;
