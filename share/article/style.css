@@ -247,6 +247,9 @@ a {
 }
 
 /* 底部 */
+.footer {
+	background: #083b90;
+}
 .site-footer {
 	padding: 2.5em 0;
 	text-align: center;
