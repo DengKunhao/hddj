@@ -1,7 +1,7 @@
 document.writeln("<div class=\'hide\'>");
 document.writeln("						<div class=\'column_navigation\'>");
 document.writeln("							<div class=\'navigation_bar\'>");
-document.writeln("								<div class=\'navbar\'> <a href=\'https://hddj.vercel.app/index/index.html\' target=\'_blank\' title=\'官网主页\'>官网主页</a> </div>");
+document.writeln("								<div class=\'navbar\'> <a href=\'https://hddj.vercel.app/index/index.html\' target=\'_blank\' title=\'网站首页\'>网站首页</a> </div>");
 document.writeln("							</div>");
 document.writeln("							<div class=\'navigation_bar\'>");
 document.writeln("								<div class=\'navbar\'> <a href=\'https://hddj.vercel.app/index/index.html#zxbd\' target=\'_blank\' title=\'最新报道\'>最新报道</a> </div>");
