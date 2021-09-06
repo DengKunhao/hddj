@@ -205,9 +205,12 @@ a {
 }
 
 .line {
+	width: 1100px;
+	/* width: 100%; */
 	height: 1px;
+	margin: 0 auto;
 	border-bottom: 1px solid #fff;
-	width: 100%;background:#8bb6da;
+	background:#8bb6da;
 }
 
 /* 大头条附链 */
@@ -1044,6 +1047,22 @@ div.playing .play {
 	width: 1100px;
 }
 
+.zwgk-title {
+	width: 1100px;
+	height: auto;
+	margin: 10px auto 10px;
+	background-color: rgb(0 128 255);
+	/* background-image: linear-gradient(-84deg,#1AB6FF 0,#1AB6FF 0,#028FFF 100%); */
+}
+
+.zwgk-title h1 {
+	font-size:50px;
+	font-family:"华文行楷";
+	color:white;
+	text-align: center;
+	line-height: 68px;
+}
+
 .comprehensive_information-body {
 	position: relative;
 	background: url(../images/zdgzbg_bg.png) no-repeat;
@@ -1418,29 +1437,9 @@ div.playing .play {
 }
 
 /* 精彩活动/图集 */
-.activity_banner {
-	width: 1100px;
-	margin: 0 auto;
-}
-
-/* (图集视频分别加链接) */
-.atlas_banner {
-	position: relative;
-	width: 1100px;
-	height: 80px;
-}
-
-.atlas_banner a {
-	display: block;
-	position: absolute;
-	top: 4px;
-	height: 70px;
-	/* z-index:999; */
-}
-
-.atlas_banner .activity {
-	left: 0;
-	width: 57%;
+.jchd-title {
+	background-color: #1785e6;
+	background-image: -webkit-linear-gradient(40deg, rgb(237, 138, 108) 0%, rgb(216, 63, 57) 100%);
 }
 
 .activity_box1 {
