@@ -38,7 +38,7 @@
 				<a href="data/ldzc/xxnmq.html" target="_blank">队长简历</a>
 				<a href="#jchd" target="_blank">精彩活动</a>
 				<a href="#dzjzh" target="_blank">队长记者会</a>
-				<a href="#zdgzbg" target="_blank">综合资讯</a>
+				<a href="#zwgk" target="_blank">政务公开</a>
 				<a href="#dzzs" target="_blank">队长之声</a>
 				<a href="#zbsd" target="_blank">政报速递</a>
 				<a href="../Training_Platform/index.html" target="_blank">代练平台</a>
@@ -354,11 +354,11 @@
 			<!-- 第一个模块内容结束 -->
 
 			<!-- 第二个模块内容开始 -->
-			<!-- 战队工作报告 -->
+			<!-- 政务公开 -->
 			<div class="comprehensive_information_box">
-				<div class="zdgzbg comprehensive_information" id="zdgzbg">
-					<div class="zdgzbg-title">
-						<a><img src="images/banner-zdgzbg.png" alt="综合资讯"></a>
+				<div class="comprehensive_information" id="zwgk">
+					<div class="zwgk-title">
+						<h1>荒岛电竞俱乐部政务公开</h1>
 					</div>
 					<div class="comprehensive_information-body report slideTxtBox">
 						<div class="comprehensive_information-left fl hd">
@@ -366,11 +366,11 @@
 								<li class="sdb"><i></i>
 									<a>速读版</a>
 								</li>
-								<li class="bgqw on"><i></i>
+								<li class="bgqw"><i></i>
 									<a>报告全文</a>
 								</li>
-								<li class="zwgk"><i></i>
-									<a>政务公开</a>
+								<li class="zwgk on"><i></i>
+									<a>综合信息</a>
 								</li>
 								<li class="gcjl"><i></i>
 									<a>领导之窗</a>
@@ -584,7 +584,7 @@
 							</ul>
 							<!-- 政务公开 -->
 							<ul class="o zwgk">
-								<p style="font-family: 华文行楷; font-size: 38px; text-align: center;"><span style="font-weight: bold; color: #0664b2;">荒岛电竞俱乐部·政务公开</span></p>
+								<p style="font-family: 华文行楷; font-size: 38px; text-align: center;"><span style="font-weight: bold; color: #0664b2;">荒岛电竞俱乐部·政务公开·综合信息</span></p>
 								<h1><span><img src="images/icon-zwgk1.png"></span><a href="data/zwgk/zdld.png" target="_blank"> 战队领导</a>
 								<a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</a>
 								<span><img src="images/icon-zwgk2.png"></span><a href="data/zwgk/zzjg.png" target="_blank"> 组织机构</a></h1>
@@ -1165,9 +1165,9 @@
 			</div>
 			<!-- 综合资讯/政务公开 结束 -->
 			<!-- 精彩活动/图集 -->
-			<h5 id="jchd" class="activity_banner atlas_banner">
-				<img src="images/banner-jchd.png" alt="精彩活动/图集" class="atlas_background"><a class="activity" href="#" target="_blank"></a>
-			</h5>
+			<div class="jchd-title zwgk-title" id="jchd">
+				<h1>精彩活动</h1>
+			</div>
 			<div class="activity_box1">
 				<div class="activity_box2">
 					<div class="activity_box3">
@@ -2011,7 +2011,7 @@
 				$(".tempWrap .atlas1").css("left", leftPosition + "px");
 			});
 		</script>
-		<!-- 战队工作报告、政务公开等(综合资讯) -->
+		<!-- 荒岛电竞俱乐部政务公开等(战队工作报告) -->
 		<!-- 滚动条插件 -->
 		<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
 		<!-- jQuery时间轴插件 -->
@@ -2030,7 +2030,7 @@
 				prevCell: ".sPrev",
 				nextCell: ".sNext"
 			});
-
+			
 			jQuery(".sdb_btns").timeAxis({});
 			//工作报告 记者会  添加滚动条 前面十几个元素就创建几个滚动条
 			$('.comprehensive_information-right ul:not(:first)').niceScroll({
