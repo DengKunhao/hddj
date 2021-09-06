@@ -1047,6 +1047,7 @@ div.playing .play {
 	width: 1100px;
 }
 
+/* 政务公开横幅标题(多项共用) */
 .zwgk-title {
 	width: 1100px;
 	height: auto;
@@ -1437,6 +1438,7 @@ div.playing .play {
 }
 
 /* 精彩活动/图集 */
+/* 精彩活动横幅标题 */
 .jchd-title {
 	background-color: #1785e6;
 	background-image: -webkit-linear-gradient(40deg, rgb(237, 138, 108) 0%, rgb(216, 63, 57) 100%);
