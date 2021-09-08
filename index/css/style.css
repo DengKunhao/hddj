@@ -786,11 +786,8 @@ div.date {
 }
 
 /* 直播平台、高层简历、组织机构、架构图表和政务公开 */
-.information1 {
+.information_button {
 	height: 139px;
-}
-
-.information2 {
 	margin: 6px 0 34px 0;
 }
 
@@ -798,47 +795,52 @@ div.date {
 	float: left;
 }
 
-.information2_box {
+.information_button_box1 {
 	margin-right: 5px;
 }
 
-.information2_box2 {
+.information_button_box2 {
 	width: 216px;
 }
 
-.information2_box2 a {
-	display: inline-block;
-	float: left;
-	width: 107px;
-	height: 68px;
-}
-
-.information2_box2 a img {
+.information_button_box1 a {
 	display: block;
-}
-
-.information2_box a,
-.information2_box2 a {
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}	
+.information_button_box2 a {
 	display: block;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 }
 
-.information2_box a:hover,
-.information2_box2 a:hover {
+.information_button_box1 a:hover {
+	transform: scale(1.06);
+	-moz-transform: scale(1.06); 
+	-o-transform: scale(1.06); 
+	-ms-transform: scale(1.06);
+}
+.information_button_box2 a:hover {
 	margin-top: -5px;
-	/* 	transform: scale(1.06);
-		-moz-transform: scale(1.06); 
-		-o-transform: scale(1.06); 
-		-ms-transform: scale(1.06); */
 }
 
-.information2_box2 .information_link1 {
+.information_button_box2 a {
+	display: inline-block;
+	float: left;
+	width: 107px;
+	height: 68px;
+}
+
+.information_button_box2 a img {
+	display: block;
+}
+
+.mr2 {
 	margin-right: 2px;
 }
 
-.information2_box2 .information_link2 {
+.mb2 {
 	margin-bottom: 2px;
 }
 
