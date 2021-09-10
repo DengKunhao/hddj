@@ -2285,7 +2285,82 @@ div.activity_images .atlas2 li .atlas2_images {
 	overflow: hidden;
 }
 
-/* 返回顶部按钮 */
+/* 底部 start */
+.bottom {
+	width:1100px; 
+	margin:0 auto; 
+}
+
+.footer {
+	/* width:1028px; */
+	margin:0px auto 0px auto;
+	padding:0px;border-top:8px solid #083b90;
+	overflow:hidden;
+}
+
+.footer_content {
+	padding-top:22px; 
+	padding-left:20px; 
+	height:174px;
+}
+
+.footer_content_rf .fl {
+	padding-right:20px;
+}
+
+.footer_content_rf p {
+	font: normal 16px/24px "microsoft yahei";
+	width: 82px;
+	padding: 4px 8px 0px;
+}
+
+.footer_content_rf p a:hover {
+	color: #000;	
+}
+
+/*二维码*/
+.QR-code:hover {
+	color: #000;
+}
+.QR-code {
+	display: inline-block;
+	width: 110px;
+	text-align: center;
+}
+.QR-code img,
+.QR-code span {
+	display: block;
+	margin: 0 auto;
+	font: normal 10px/14px "微软雅黑";
+	color: #000;
+}
+
+.footer_content_text {
+	padding-top: 0px;
+	/* margin-top: 10px; */
+}
+
+.footer_content_text span {
+	font-size:12px;
+	font-family:"微软雅黑","宋体"; 
+	padding:0 8px;
+}
+.footer_content_text p {
+	height: auto;
+	padding: 0px;
+	font-size:12px;
+	font-family:"微软雅黑","宋体";
+	margin-top:7px; 
+	line-height:24px; 
+	background:#E0E0E0; 
+	margin-left:8px;
+}
+#logo {
+	margin-top: 25px;
+}
+/* 底部 end */
+
+/* 返回顶部按钮 start */
 .back_to_top {
 	width: 48px;
 	height: 48px;
@@ -2309,8 +2384,9 @@ div.activity_images .atlas2 li .atlas2_images {
 	line-height: 20px;
 	padding: 4px 3px;
 }
+/* 返回顶部按钮 end */
 
-/* 临时通知弹窗 */
+/* 临时通知弹窗 start */
 .popup {
 	position: fixed;
 	top: 0;
@@ -2362,3 +2438,4 @@ div.activity_images .atlas2 li .atlas2_images {
 	margin-top: 450px;
 	text-align: center;
 }
+/* 临时通知弹窗 end */
