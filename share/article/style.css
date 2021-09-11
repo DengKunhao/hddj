@@ -99,7 +99,7 @@ a {
 
 .logo {
 	height: 130px;
-	background: url(https://hddj.vercel.app/share/article/banner-logo.png) no-repeat;
+	background: url(banner-logo.png) no-repeat;
 }
 
 .hide {
@@ -225,7 +225,7 @@ a {
 
 .line {
 	width: 100%;
-	background: url(https://hddj.vercel.app/share/article/repeat_line.png) 0 0 repeat-x;
+	background: url(repeat_line.png) 0 0 repeat-x;
 	height: 8px;
 }
 
