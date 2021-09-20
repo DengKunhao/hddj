@@ -2294,18 +2294,22 @@ div.activity_images .atlas2 li .atlas2_images {
 .footer {
 	/* width:1028px; */
 	margin:0px auto 0px auto;
-	padding:0px;border-top:8px solid #083b90;
+	border-top:8px solid #083b90;
 	overflow:hidden;
 }
 
 .footer_content {
-	padding-top:22px; 
-	padding-left:20px; 
-	height:174px;
+	padding-top: 22px; 
+	padding-left: 20px; 
+	height: 130px;
+}
+
+.footer_content_lf {
+	text-align: center;
 }
 
 .footer_content_rf .fl {
-	padding-right:20px;
+	padding-right: 20px;
 }
 
 .footer_content_rf p {
@@ -2324,7 +2328,7 @@ div.activity_images .atlas2 li .atlas2_images {
 }
 .QR-code {
 	display: inline-block;
-	width: 110px;
+	/* width: 110px; */
 	text-align: center;
 }
 .QR-code img,
