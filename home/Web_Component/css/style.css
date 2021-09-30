@@ -217,7 +217,6 @@ ul {
 .big_headline-fl {
 	height: auto;
 	overflow: hidden;
-	color: #083b90;
 	font-family: "微软雅黑，宋体";
 	font-size: 20px;
 }
@@ -225,10 +224,8 @@ ul {
 .big_headline-fl a {
 	line-height: 36px;
 	padding-bottom: 2px;
-	color: #083b90;
+	color: #3253a7;
 	font-size: 20px;
-	padding: 0;
-	margin: 0
 }
 
 .big_headline-fl a:hover {
