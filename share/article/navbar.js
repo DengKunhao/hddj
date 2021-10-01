@@ -22,7 +22,7 @@ document.writeln("							<div class=\'navigation_bar\'>");
 document.writeln("								<div class=\'navbar\'> <a href=\'../../home/Ancillary_page/gybw.html\' target=\'_blank\' title=\'关于本网\'>关于本网</a> </div>");
 document.writeln("							</div>");
 document.writeln("							<div class=\'navigation_bar\'>");
-document.writeln("								<div class=\'navbar\'> <a href=\'../../home/Ancillary_page/gybw.html\' target=\'_blank\' title=\'网站声明\'>网站声明</a> </div>");
+document.writeln("								<div class=\'navbar\'> <a href=\'../../home/Ancillary_page/wzsm.html\' target=\'_blank\' title=\'网站声明\'>网站声明</a> </div>");
 document.writeln("								");
 document.writeln("							</div>");
 document.writeln("						</div>");
