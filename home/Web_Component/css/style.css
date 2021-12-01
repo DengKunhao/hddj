@@ -748,19 +748,12 @@ a.vertical_line {
 .schedule_day_list li{
 	float: left;
 	width: 47px;
-	height: 44px;
 	line-height: 44px;
 	vertical-align: middle;
-	background: #eff8fd;
 	font-family: "microsoft yahei";
 	font-size: 16px;
-	color: #0152a2;
 	text-align: center;
 	border-right:1px solid #fff;
-}
-
-.schedule_day_list li a{
-	color: #0152a2;
 }
 
 .schedule_day_list li:hover{
@@ -868,15 +861,18 @@ a.vertical_line {
 
 .information_button_box2 a.button1 {
 	background-image: linear-gradient(90deg,#df1059 0,#e4467c 100%);
+	margin: 0 2px 2px 0;
 }
 
 .information_button_box2 a.button2 {
 	background-image: linear-gradient(90deg,#8619f5 0,#a349ff 100%);
+	margin-bottom: 2px;
 	
 }
 
 .information_button_box2 a.button3 {
 	background-image: linear-gradient(90deg,#0f60da 0,#4969f0 100%);
+	margin-right: 2px;
 }
 
 .information_button_box2 a.button4 {
@@ -890,14 +886,6 @@ a.vertical_line {
 /* .information_button_box2 a img {
 	display: block;
 } */
-
-.mr2 {
-	margin-right: 2px;
-}
-
-.mb2 {
-	margin-bottom: 2px;
-}
 
 /* 视频|音频 */
 .video_and_audio {
@@ -1314,182 +1302,6 @@ a.vertical_line {
 .comprehensive_information-right ul.first_ul {
 	background: none;
 	margin-top: 0px;
-}
-
-/* 工作报告·速读版 */
-.sdb_box {
-	position: relative;
-}
-
-.sdb_box .sdb {
-	width: 625px;
-	margin: 0 auto 20px;
-	height: 64px;
-	*+height: 64px;
-	overflow: hidden;
-	*+position: relative;
-}
-
-.sdb ul {
-	width: 100%;
-	text-align: center;
-	margin: 0 auto;
-	height: 64px;
-	*+height: 64px;
-	position: relative;
-}
-
-.sdb .tempWrap {
-	margin: 0 auto;
-}
-
-.sdb li {
-	display: inline;
-	width: 76px;
-	height: 58px;
-	*+height: 75px;
-	cursor: pointer;
-	font-size: 16px;
-	color: #000;
-	margin: 0 1px;
-	float: left;
-	line-height: 22px;
-}
-
-.sdb li {
-	background: url(../images/icon-zdgzbg_sdb_bg1.png) 0 -70px no-repeat;
-	padding: 6px 0 0;
-	height: 58px;
-	line-height: 20px;
-}
-
-
-.sdb li.act {
-	background: url(../images/icon-zdgzbg_sdb_bg1.png) 0 0 no-repeat;
-	color: #fff;
-}
-
-.sdb li.act a {
-	color: #fff;
-}
-
-.sdb_content {
-	text-align: center;
-	position: relative;
-	height: 680px;
-}
-
-.sdb_content p {
-	font-size: 20px;
-	line-height: 48px;
-	text-indent: 2em;
-	color: #313131;
-}
-
-/* (速读版标题左右切换按钮) */
-.sPrev,
-.sNext {
-	width: 38px;
-	height: 38px;
-	display: block;
-	position: absolute;
-	top: 12px;
-	cursor: pointer;
-	background: url(../images/icon-dz_arrow.png) 0 0 no-repeat;
-}
-
-.sdb_btns .sPrev {
-	left: -14px;
-	_left: -40px;
-	background-position: 0px -40px;
-}
-
-.sdb_btns .sNext {
-	right: -18px;
-	_right: 0px;
-}
-
-.sPrev img,
-.sNext img {
-	transition: all .6s cubic-bezier(.51, 1.1, .9, .95);
-	-moz-transition: all .6s cubic-bezier(.51, 1.1, .9, .95);
-	-webkit-transition: all .6s cubic-bezier(.51, 1.1, .9, .95);
-	-o-transition: all .6s cubic-bezier(.51, 1.1, .9, .95);
-}
-
-.comprehensive_information .slideBox {
-	text-align: left;
-	padding: 10px 30px 0px;
-	height: 608px;
-	display: none;
-	overflow: hidden;
-}
-
-.slideBox .long_i {
-	width: 156px;
-	background: url(../images/icon-zdgzbg_sdb_bg2.png) 0 0 no-repeat;
-}
-
-.comprehensive_information-title {
-	font-size: 24px;
-	font-weight: bold;
-	line-height: 34px;
-	min-height: 56px;
-	padding-bottom: 18px;
-	/* padding-bottom: 24px; */
-}
-
-.comprehensive_information-title a {
-	color: #015293;
-}
-
-.sdb-big_title{
-	margin-top: -25px;
-	line-height: 60px;
-	text-align: center;
-	font-family: 华文行楷;
-	font-size: 30px;
-}
-
-.sdb-title1 {
-	display: inline-block;
-	width: auto;
-	height: 56px;
-	padding: 0 4px;
-	line-height: 48px;
-	background: url(../images/icon-zdgzbg_sdb_bg2.png) center 0 no-repeat;
-	text-align: center;
-	color: #fff;
-	float: left;
-	margin-right: 16px;
-	font-size: 24px;
-}
-
-.sdb-title1 a {
-	color: #fff;
-}
-
-.sdb-title2 {
-	padding-top: 8px;
-}
-
-.view_details a {
-	color: #fff;
-	height: 30px;
-	line-height: 30px;
-	font-size: 18px;
-}
-
-.text-right {
-	text-align: right;
-	position: absolute;
-	right: 30px;
-	bottom: 0px;
-	background: #015293;
-	width: 120px;
-	height: 32px;
-	border-radius: 11px;
-	text-align: center;
 }
 
 /* 政务公开 */
