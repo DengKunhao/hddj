@@ -784,12 +784,12 @@ a.vertical_line {
 
 .btn_prev{
 	left: 0;
-	background-image: url(http://www.gov.cn/govweb/xhtml/zhuanti/2018twoSessions/images/preBtn.png);
+	background-image: url(../images/icon-rc_left.png);
 }
 
 .btn_next{
 	right: 0;
-	background-image: url(http://www.gov.cn/govweb/xhtml/zhuanti/2018twoSessions/images/nextBtn.png);
+	background-image: url(../images/icon-rc_right.png);
 }
 
 /* 直播平台、高层简历、组织机构、架构图表和政务公开 */
@@ -887,8 +887,8 @@ a.vertical_line {
 	display: block;
 } */
 
-/* 视频|音频 */
-.video_and_audio {
+/* 荒岛电竞卫视 */
+.hddj_video {
 	width: 370px;
 	height: 328px;
 	/* height: 630px; */
@@ -898,7 +898,7 @@ a.vertical_line {
 	background-color: #3493ee;
 }
 
-.video_and_audio p {
+.hddj_video p {
     width: 350px;
 	padding: 10px 10px 0 10px;
 	text-align: center;
@@ -952,106 +952,6 @@ a.vertical_line {
 
 .video-text a {
     color: white;
-}
-
-.audio {
-	width: 350px;
-	height: 292px;
-	margin: 10px 10px 0 10px;
-    position: absolute;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: white;
-	/* background-image: linear-gradient(90deg,#8619f5 0,#a349ff 100%); */
-}
-
-.audio img {
-    width: 250px;
-    height: 260px;
-    position: relative;
-    z-index: 1;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
-}
-
-.audio_button {
-	position: relative;
-	width: 100px;
-	height: 260px;
-	overflow: hidden;
-	float: right;
-}
-
-.audiojs {
-	position: absolute;
-	right: 0px;
-	top: 2px;
-	box-shadow: none;
-	width: 100px;
-	height: 260px;
-	background: white;
-}
-
-.audiojs .play-pause {
-	width: 87px;
-	height: 132px;
-}
-
-.audiojs .play-pause {
-	border-right: none;
-}
-
-.audiojs .loaded,
-.audiojs .scrubber {
-	width: 470px;
-	display: none;
-}
-
-.audiojs .pause,
-.audiojs .play {
-	background: url(../images/icon_music.gif) no-repeat 0 0;
-	width: 40px;
-	height: 50px;
-	margin: 72px 0 10px 13px;
-	border: 1px #ccc solid;
-	border-radius: 50%;
-}
-
-.audio_button .time {
-	float: left;
-	margin: 0;
-	padding: 0 0 0 15px;
-	display: block;
-	overflow: hidden;
-	text-align: center;
-	text-shadow: none;
-	font-size: 12px;
-	color: #858585;
-	line-height: 36px;
-	border-left: none;
-}
-
-.audio_button .time em {
-	color: #858585;
-	font-style: normal;
-}
-
-.audio-text{
-	position: relative;
-	width: 350px;
-	height: 32px;
-	overflow: hidden;
-	text-align: center;
-	background-image: #083B90;
-}
-
-.audio-text a {
-	color: #e1af45;
-	font-size: 21px;
-	font-family: 华文行楷;
-	line-height: 36px;
 }
 
 /* 专题专栏 */
