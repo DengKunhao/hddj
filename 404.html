@@ -66,7 +66,7 @@
 		<div class="errorbox" id="errorbox">
 			<div class="box">
 				<h3>对不起，可能是网络原因或无此页面，请稍后尝试。</h3>
-				<p>本页面3秒之后将带您回到荒岛电竞俱乐部官网首页。</p>
+				<p>本页面<span id="countdown">5</span>秒之后将带您回到荒岛电竞俱乐部官网首页。</p>
 			</div>
 			<a href="https://hddj.vercel.app/home/index.html">马上跳转</a>
 		</div>
@@ -91,12 +91,26 @@
 			loadHeight();
 			window.onload = window.onresize = loadHeight;
 		</script>
-		<script language="javascript">
-			setTimeout("aaa()", 5000);
+		<script type="text/javascript"> 
+			var i = 4;
+			var intervalid;
+			var countdown = document.getElementById("countdown");
+			intervalid = setInterval("fun()", 1000);
+			function fun() {
+			if (i == 0){
+			window.location.href = "https://hddj.vercel.app/home/index.html";
+			clearInterval(intervalid);
+			}
+			countdown.innerHTML = i;
+			i--;
+			}		
+		</script>
+		<!-- <script language="javascript">
+			setTimeout("time()", 5000);
 
-			function aaa() {
+			function time() {
 				window.location = "https://hddj.vercel.app/home/index.html"
 			}
-		</script>
+		</script> -->
 	</body>
 </html>
