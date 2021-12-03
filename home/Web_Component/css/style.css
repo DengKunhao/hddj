@@ -459,6 +459,25 @@ ul {
 	width: 684px;
 }
 
+/* 当前时间和队历 */
+.current_time,
+.team_calendar {
+	width: 638px;
+	height: 50px;
+	padding: 0 30px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 10px #ccc;
+	background-color: #fff;
+}
+
+/* 当前时间 */
+.time {
+	padding: 12px 0;
+	text-align: center;
+	color: #AAAAAA;
+	font-size: 20px;
+}
+
 /* 荒岛电竞俱乐部队历或第二个头条 */
 /* 兼容IE6，IE7，IE8 */
 @media \0screen\,screen\9 {
@@ -477,12 +496,7 @@ ul {
 }
 
 .team_calendar {
-	width: 638px;
-	height: 248px;
-	padding: 0 30px;
-	margin-bottom: 10px;
-	box-shadow: 0 0 10px #ccc;
-	background-color: #fff;
+	height: 178px;
 	/* background-color: rgba(221, 221, 221, 0.6); */
 }
 
@@ -498,8 +512,8 @@ ul {
 }
 
 .calendar_subtitle {
-	height: 144px;
-	padding-bottom: 20px;
+	height: 123px;
+	padding-bottom: 5px;
 	line-height: 30px;
 	text-align: center;
 }
@@ -507,13 +521,6 @@ ul {
 .calendar_subtitle a {
 	color: #0d74dc;
 	font-family: "微软雅黑";
-	font-size: 18px;
-}
-
-.time {
-	padding-bottom: 5px;
-	text-align: center;
-	color: #AAAAAA;
 	font-size: 18px;
 }
 
@@ -711,7 +718,6 @@ a.vertical_line {
 
 .schedule_time {
 	position: relative;
-	margin-bottom: 20px;
 }
 
 .schedule_day{
@@ -747,10 +753,6 @@ a.vertical_line {
 .schedule_day_list li.day_list_active{
 	color: #fff;
 	background-image: linear-gradient(-84deg,#1AB6FF 0,#1AB6FF 0,#028FFF 100%);
-}
-
-.schedule_day_list li.day_list_active a{
-	color: #ffffff;
 }
 
 .btn_prev,.btn_next{
