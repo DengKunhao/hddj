@@ -74,12 +74,12 @@ body {
 /*  基本样式 end  */
 
 a { 
-	color:#333; 
+	color:#000; 
 	text-decoration:none; 
 	cursor:pointer;
 }
 a:hover { 
-	color:#2277ee;
+	color: #CAB484;
 }
 
 .page {
@@ -223,21 +223,18 @@ a:hover {
 
 /* 领导之窗 */
 .title-text {
+	float: left;
 	width: 100%;
-	padding: 10px 0;
-	float: left;
+	margin: 10px 0;
+	border-left: 10px solid #095BE3;
+	background: url(https://bkssl.bdimg.com/static/wiki-lemma/normal/resource/img/paraTitle-line_743dba1.png);
 }
-.title-text a {
-	float: left;
-	width: 110px;
-	height: 38px;
-    line-height: 38px;
-	font-size: 16px;
-	font-weight: bolder;
-    text-align: center;
-	color: white;
-	background-image: linear-gradient(90deg,#095be3 0,#198afc 100%);
-	/* border-radius: 10px; */				
+.title-text span {
+	padding: 0 10px;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 微软雅黑;
+	background:#FFF;	
 }
 
 /* 最新列表 */
