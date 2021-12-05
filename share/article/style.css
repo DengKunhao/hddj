@@ -209,6 +209,10 @@ a:hover {
 	padding: 20px 10px;
 }
 
+.article img {
+	border: 1px solid #a4a4a4;
+} 
+
 .article .img {
 	text-align: center;
 } 
@@ -223,19 +227,31 @@ a:hover {
 
 /* 领导之窗 */
 .title-text {
+	position: relative;
 	float: left;
 	width: 100%;
 	height: 26px;
 	margin: 10px 0;
 	border-left: 10px solid #095BE3;
-	background: url(parallel_line.png) top center;
 }
+
 .title-text span {
 	padding: 0 10px;
 	font-size: 20px;
 	font-weight: 400;
 	font-family: 微软雅黑;
 	background:#FFF;	
+}
+
+.title-text span::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 1px;
+	width: 870px;
+	top: 50%;
+	left: 100px;
+	background-color: #e6e6e6;
 }
 
 /* 最新列表 */
