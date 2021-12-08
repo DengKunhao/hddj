@@ -146,17 +146,17 @@ body {
 	width: 758px;
 }
 
-.name {
+.name-post {
 	text-align:center;
 }
 
-.name1 {
+.name {
 	color: #095BE3;
 	font-size: 30px;
 	font-weight: bold;	
 }
 
-.name em {
+.name-post em {
 	/* width: 84px; */
 	width: 158px;
 	height: 1px;
@@ -165,7 +165,7 @@ body {
     margin-top: 10px;					
 }
 
-.name2 {
+.post {
 	font-weight: bold;
 	font-size: 16px;
 	margin-top: 10px;
