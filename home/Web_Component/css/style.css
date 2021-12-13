@@ -619,6 +619,13 @@ a.vertical_line {
     border: 3px #0f60da solid
 }
 
+/* .latest_report_live_head-content a {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+} */
+
 /* 第一个模块右边 */
 .first_module_right {
 	float: right;
@@ -751,7 +758,6 @@ a.vertical_line {
 }
 
 .schedule_day_list li.day_list_active{
-	color: #fff;
 	background-image: linear-gradient(-84deg,#1AB6FF 0,#1AB6FF 0,#028FFF 100%);
 }
 
