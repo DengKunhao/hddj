@@ -1,7 +1,7 @@
 /*
 //@files: 荒岛电竞俱乐部官方网站层叠样式表
 //@author: 荒岛电竞俱乐部信息技术中心
-//@date: 2021/12/03
+//@date: 2021/12/18
 */
 
 /* 通用样式 */
@@ -183,7 +183,7 @@ ul {
 }
 
 .main-nav a {
-	margin: 0 20px;
+	margin: 0 10px;
 	display: inline-block;
 	line-height: 51px;
 	font-size: 25px;
@@ -199,6 +199,16 @@ ul {
 	border-bottom: 5px solid #FFFFFF;
 	background-color: transparent;
 	transition: all 0.3s linear;
+}
+
+.main-nav .separator {
+	width: 2px;
+	height: 36px;
+	background: #FFFFFF;
+	vertical-align: middle;
+}
+.main-nav .separator:hover{
+	pointer-events: none;
 }
 
 /* 新版大头条 */
@@ -444,7 +454,9 @@ ul {
 }
 
 /* 不加此样式文字内容无法显示 */
-.slidesjs-container{ overflow:visible !important}
+.slidesjs-container{ 
+	overflow:visible !important
+}
 /* javascript调用样式结束 */
 
 /* 第一个模块 */
@@ -536,36 +548,33 @@ ul {
 
 .latest_report_live_head-logo {
 	float: left;
-	width: 220px;
 	height: 36px;
-	background: #0f60da;
+	/* background: #0f60da;
 	border-radius: 10px;
-	/* border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
 	border-top-right-radius: 10px; */
 }
 
 .latest_report_live_head-logo a {
+	position: relative;
+	float: left;
+	padding: 0 10px;
+	line-height: 33.5px;
+	border: 1px solid #f0f0f0;
+	border-radius: 10px;
 	font-family: 华文中宋,微软雅黑;
 	font-size: 25px;
-	color: white;
-	float: left;
-	width: 105px;
-	line-height: 33.5px;
-	text-align: center;
+	color: #9f9f9f;
 }
 
-.zdyw {
+.hover {
+	background: #0F60DA;
+	color: #FFFFFF!important;
+	/* border-bottom: 5px solid rgb(202, 180, 132); */
 }
 
 a.tzgg {
 	float: right;
-	width: 105px;
-	text-align: center;
-}
-
-a.vertical_line {
-	width: 10px;
-	margin-left: -3px;
 }
 
 .latest_report_live_head-update_time {
@@ -584,8 +593,23 @@ a.vertical_line {
 	font-size: 16px;
 }
 
+.zxbd .latest_report_live_head-update_time a {
+	display: none;
+}
+
+.zxbd .qr-update_time .current {
+	display: inline-block;
+}
+
 .latest_report_live_head-content {
 	height: 455px;
+}
+
+.zxbd_list {
+	display: none;
+}
+.zxbd .current_list {
+	display: block;
 }
 
 .latest_report_live_head-content li {
@@ -809,6 +833,7 @@ a.vertical_line {
 .information_button_box1 a,
 .information_button_box2 a {
 	display: block;
+	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 }
