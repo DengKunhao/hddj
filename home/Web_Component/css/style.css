@@ -1,7 +1,7 @@
 /*
 //@files: 荒岛电竞俱乐部官方网站层叠样式表
 //@author: 荒岛电竞俱乐部信息技术中心
-//@date: 2021/12/18
+//@date: 2021/12/19
 */
 
 /* 通用样式 */
@@ -558,7 +558,7 @@ ul {
 .latest_report_live_head-logo a {
 	position: relative;
 	float: left;
-	padding: 0 10px;
+	padding: 0 10px 3px;
 	border: 1px solid #f0f0f0;
 	border-radius: 10px;
 	font-family: 华文中宋,微软雅黑;
