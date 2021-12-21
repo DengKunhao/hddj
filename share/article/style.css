@@ -170,12 +170,18 @@ a:hover {
 }
 
 /* 归档 */
-#place_on_file {
+#ymygd {
 	position: relative;
 	text-align: center;
 }
 
-#place_on_file p {
+#ymygd_box {
+	position: absolute; 
+	top:365px; 
+	right:-50px;
+}
+
+#ymygd p {
 	font-size:20px;
 	color:#C50200;
 }
