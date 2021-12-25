@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<script id="all mobilize" charset="utf-8" src="Web_Component/js/all_mobilize.min.js"></script>
+		<script src="Web_Component/js/newest_time.js" type="text/javascript" charset="utf-8"></script>
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<link rel="alternate" media="handheld" href="#" />
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
@@ -159,7 +160,7 @@
 						<div class="time"><i class="fa fa-clock-o" aria-hidden="true"></i>
 							<span>当前时间
 									<script language="JavaScript" type="text/javascript"> 
-										new_time();
+										newest_time();
 									 </script>
 								<!-- <script>
 									function initArray()
@@ -694,8 +695,6 @@
 				$('.schedule_day_list li').eq(17).find('a').css({color:'#fff'}).parent().siblings().find('a').css({color:'#0152a2'});						
 			})(jQuery);
 		</script>
-		<!-- 当前时间 -->
-		<script src="Web_Component/js/new_time.js" type="text/javascript" charset="utf-8"></script>
 		<!-- 最新报道 -->
 		<script type="text/javascript">
 			(function(){
