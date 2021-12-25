@@ -179,11 +179,12 @@ ul {
     width: 1100px;
 	margin: 0 auto;
 	text-align: center;
-	background-image: linear-gradient(to right,#0559b6,#4b98ec);
+	background: #4b98ec;
+	/* background-image: linear-gradient(to right,#0559b6,#4b98ec); */
 }
 
 .main-nav a {
-	margin: 0 10px;
+	padding: 0 20px;
 	display: inline-block;
 	line-height: 51px;
 	font-size: 25px;
@@ -196,16 +197,22 @@ ul {
 }
 
 .main-nav .active,.main-nav a:hover {
+	/* background: #338CE6!important; */
 	border-bottom: 5px solid #FFFFFF;
 	background-color: transparent;
 	transition: all 0.3s linear;
 }
 
+.main-nav a:hover {
+	background: #338CE6;
+}
+
 .main-nav .separator {
+	padding: 0;
 	width: 2px;
-	height: 36px;
+	height: 23px;
 	background: #FFFFFF;
-	vertical-align: middle;
+	vertical-align: text-bottom;
 }
 .main-nav .separator:hover{
 	pointer-events: none;
@@ -572,9 +579,9 @@ ul {
 	/* border-bottom: 5px solid rgb(202, 180, 132); */
 }
 
-a.tzgg {
+/* a.tzgg {
 	float: right;
-}
+} */
 
 .latest_report_live_head-update_time {
 	float: right;
@@ -807,7 +814,7 @@ a.tzgg {
 	background-image: url(../images/icon-rc_right.png);
 }
 
-/* 直播平台、高层简历、组织机构、架构图表和政务公开 */
+/* 直播平台、领导之窗、架构图表、代练平台和新人须知 */
 .information_button {
 	width: 370px;
 	height: 139px;
@@ -1256,6 +1263,10 @@ a.tzgg {
 	font-size: 18px;
 	font-family: 华文中宋;
 	border-bottom: 1px dashed #c4d2e4;
+}
+
+.zwgk li.center {
+	text-align: center;
 }
 
 .zwgk li .date {
