@@ -165,7 +165,6 @@ a:hover {
     right: 0px;
     left: 50px;
     bottom: 15px;
-    _bottom: 15px;
     z-index: 2;
 }
 
@@ -232,8 +231,8 @@ a:hover {
 	line-height: 2em;
 }
 
-/* 领导之窗 */
-.title-text {
+/* 领导之窗(旧版) */
+/* .title-text {
 	position: relative;
 	float: left;
 	width: 100%;
@@ -247,7 +246,7 @@ a:hover {
 	font-size: 20px;
 	font-weight: 400;
 	font-family: 微软雅黑;
-	background:#FFF;	
+	background:#FFF!important;	
 }
 
 .title-text span::after {
@@ -259,6 +258,24 @@ a:hover {
 	top: 50%;
 	left: 100px;
 	background-color: #e6e6e6;
+} */
+
+/* 领导之窗(新版) */
+.title-text {
+	margin: 20px 0;
+	float: left;
+	width: 100%;
+	height: 13px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.title-text span {
+	padding: 0 10px;
+	border-left: 10px solid #095BE3;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 微软雅黑;
+	background:#FFF!important;	
 }
 
 /* 最新列表 */
