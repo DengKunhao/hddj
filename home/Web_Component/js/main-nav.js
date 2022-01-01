@@ -1,6 +1,0 @@
-//-------------------------------
-//@files: 荒岛电竞俱乐部官方网站导航栏
-//@author: 荒岛电竞俱乐部信息技术中心
-//@date: 2021/11/08
-//-------------------------------
-document.writeln("<div class=\"main-nav-box\"><div class=\"main-nav\"><a href=\'#\' target=\'_blank\' class=\'active\' title=\'网站首页\'><i class=\"fa fa-home\" aria-hidden=\"true\"></i>网站首页</a><a href=\'../../home/index.html\' target=\'_blank\' title=\'队长之窗\'><i class=\"fa fa-coffee\" aria-hidden=\"true\"></i>队长之窗</a><a href=\'../../index.html\' target=\'_blank\' title=\'最新报道\'><i class=\"fa fa-newspaper-o\" aria-hidden=\"true\"></i>最新报道</a><a href=\'../../home/index.html\' target=\'_blank\' title=\'政务公开\'><i class=\"fa fa-briefcase\" aria-hidden=\"true\"></i>政务公开</a><a href=\'../../home/index.html\' target=\'_blank\' title=\'领导之窗\'><i class=\"fa fa-users\" aria-hidden=\"true\"></i>领导之窗</a><a href=\'../../home/index.html\' target=\'_blank\' title=\'代练平台\'><i class=\"fa fa-gamepad\" aria-hidden=\"true\"></i>代练平台</a><a href='../../Ancillary_page/website_map.html\' target=\'_blank\' title=\'网站地图\'><i class=\"fa fa-map-o\" aria-hidden=\"true\"></i>网站地图</a></div></div>");
