@@ -592,7 +592,7 @@ ul {
 }
 
 .zxfb-lbk ul {
-	height: 21px;
+	/* height: 21px; */
 	width: 5000px;
 	margin-left: 40px;
 	float: left;
