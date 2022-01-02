@@ -584,6 +584,7 @@ p.msz span {
 }
 
 .box3 .list ul li span {
+	float: right;
 	color: #8eafd7;
 	font-size: 12px;
 }
