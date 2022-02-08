@@ -596,18 +596,18 @@ ul {
 }
 
 .zxfb-lbk ul {
-	/* height: 21px; */
 	width: 5000px;
-	margin-left: 40px;
+	margin: 28px 0 28px 40px;
 	float: left;
 	position: relative;
-	top: 29.5px;
 }
 
 .zxfb-lbk ul li {
 	position: relative;
 	float: left;
-	padding: 0px 15px;
+	line-height: 24px;
+	font-size: 18px;
+	padding: 0 15px;
 }
 
 .zxfb-lbk ul li:before {
@@ -615,13 +615,11 @@ ul {
 	display: block;
 	position: absolute;
 	left: 0;
-	top: 8px;
-	border: 4px #0f60da solid;
+	top: 7px;
+	width: 10px;
+	height: 10px;
 	/* border-radius: 50%; */
-}
-
-.zxfb-lbk ul li a {
-	font-size: 18px;
+	background: #0f60da;
 }
 
 /* 最新报道 */
@@ -729,9 +727,7 @@ ul {
 }
 
 .latest_report_live_head-content li:hover:before {
-	background:
-		/* #e15e55 */
-		#0f60da;
+	background:#0f60da/* #e15e55 */;
 	border: 3px #0f60da solid
 }
 
@@ -1600,7 +1596,7 @@ ul {
 	color: #ffffff;
 }
 
-.popup-content>p {
+.popup-content p {
 	font-size: 33px;
 	line-height: 1;
 	color: white;
