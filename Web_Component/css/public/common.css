@@ -610,12 +610,13 @@ p.msz span {
 	padding: 10px 0;
 }
 
-/* .box3 ul li a {
-	display: -webkit-box;
+.box3 ul li a {
+	font-size: 16px;
+	/* display: -webkit-box;
 	-webkit-line-clamp: 1;
 	-webkit-box-orient: vertical;
-	overflow: hidden;
-} */
+	overflow: hidden; */
+}
 
 .box3 ul li a:hover {
 	color: #095BE3;
