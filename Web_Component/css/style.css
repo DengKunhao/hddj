@@ -1,7 +1,7 @@
 /*
 //@files: 荒岛电竞俱乐部官方网站层叠样式表
 //@author: 荒岛电竞俱乐部信息技术中心
-//@date: 2022/2/6
+//@date: 2022/4/23
 */
 
 /* 通用样式 */
@@ -58,11 +58,39 @@ a:hover {
 	text-decoration: none;
 }
 
+@font-face {
+	font-family: "Preferred_font";
+	src: url("public/FZXBSJW3-3.woff") format("woff");
+	/* url("font/FZXBSJW3-2.ttf") format("truetype"),
+						url("font/FZXBSJW.svg#myFirstFont") format("svg"); */
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Preferred_font";
+	src: url("public/FZXBSJW3-3.woff");
+	/* IE9 */
+	font-style: normal;
+	font-weight: normal;
+}
+
 html {
 	/* overflow: hidden; */
 	/* _text-overflow:ellipsis; */
 	/* background-image:url(about:blank); */
 	/* background-attachment:fixed; */
+}
+
+.sad-theme {
+	-webkit-filter: grayscale(100%);
+	 -moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);		    
+	filter: grayscale(100%);
+    -webkit-filter: grey;
+    filter: gray;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);	
 }
 
 body {
@@ -251,7 +279,7 @@ ul {
 
 .headlines a {
 	color: #095be3;
-	font-family: 华文行楷, 宋体;
+	font-family: 华文行楷,Preferred_font,宋体;
 }
 
 .headlines-fl a {
@@ -1347,10 +1375,6 @@ ul {
 	text-align: center;
 }
 
-.mb10 {
-	margin-bottom: 10px;
-}
-
 .zwgk h2 {
 	line-height: 39px;
 	font-size: 26px;
@@ -1367,23 +1391,24 @@ ul {
 	font-family: 楷体;
 }
 
+.zwgk h4 {
+    line-height: 36px;
+    font-size: 18px;
+	font-weight: bold;
+	font-family: 华文中宋;
+    text-align: center;
+}
+
 .zwgk li {
+	padding: 3px 0 3px 20px;
+	position: relative;
 	line-height: 30px;
 	font-size: 18px;
 	font-family: 华文中宋;
 	border-bottom: 1px dashed #c4d2e4;
 }
 
-.zwgk li.center {
-	text-align: center;
-}
-
-.before li {
-	padding: 3px 0 3px 15px;
-	position: relative;
-}
-
-.before li:before {
+.zwgk li:before {
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	transition: all 1s;
@@ -1401,9 +1426,13 @@ ul {
 	background: #fff;
 }
 
-.before li:hover:before {
+.zwgk li:hover:before {
 	background: #0f60da;
 	border: 3px #0f60da solid
+}
+
+.zwgk li.center {
+	text-align: center;
 }
 
 /* 领导机构 */
