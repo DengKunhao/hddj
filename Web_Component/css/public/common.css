@@ -309,7 +309,6 @@ a:hover {
 } */
 
 /* 领导之窗 */
-/* 首页 */
 .ldzc {
 	padding-top: 50px;
 }
@@ -457,7 +456,7 @@ p.msz span {
 	font-size: 16px;
 }
 
-.box1 {
+.resume_box {
 	padding-top: 35px;
 	/* height: 173px; */
 }
@@ -484,7 +483,7 @@ p.msz span {
 	border: #ebebeb 1px solid;
 }
 
-/* .box1 .text {
+/* .resume_box .text {
 	width: 600px;
 	text-indent: 2em;
 	font-size: 16px;
@@ -492,12 +491,30 @@ p.msz span {
 	margin-top: 5px;
 } */
 
-.box1 .text {
+.resume_box .text {
 	width: 75%;
 	margin-right: 15px;
 	text-indent: 2em;
 	font-size: 16px;
 	line-height: 35px;
+}
+
+.resume_box .resume_subtitle {
+	width: 75%;
+	height: 12px;
+	margin: 10px 15px 10px 0;
+	font-size: 18px;
+	color: #095be3;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.resume_box .resume_subtitle span {
+    width: 90px;
+    line-height: 24px;
+    border-left: 6px solid #095be3;
+	background: #fff;
+	display: block;
+	text-align: center;
 }
 
 .resume_link-button span {
@@ -668,6 +685,71 @@ p.msz span {
 	color: #095BE3;
 }
 
+/* 机构设置 */
+.zdjg .title {
+    position: relative;
+    height: 50px;
+    background: url(../../images/public/zdjg_title.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 10px auto;
+}
+
+.zdjg .title span {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 50px;
+}
+
+.zdjg .title a {
+    color: #FFFFFF;
+}
+
+.zdjg .zcbm {
+    border: 1px solid #e5e5e5;
+    padding: 20px 0px;
+}
+
+.zdjg .zcbm .bmmc {
+    width: 96%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.zdjg .zcbm .bmmc a {
+    display: inline-block;
+    width: 25%;
+    font-size: 14px;
+    line-height: 40px;
+    border-bottom: 1px dotted #e6e6e6;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.zdjg .zcbm .bmmc span {
+    width: 8px;
+    height: 8px;
+    background: #095be3;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.zdjg .zcbm .bmxx {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+.zdjg .zcbm .bmxx span {
+    font-size: 14px;
+    line-height: 35px;
+    text-indent: 28px;
+}
+
 /* 最新列表 */
 .new_list {
 	margin: 0 5px;
@@ -694,8 +776,12 @@ p.msz span {
 }
 
 .new_list a {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 92%;
 	color: #4c4c4c;
-	text-decoration: none;
 }
 
 .new_list li .date {
