@@ -237,14 +237,6 @@ a:hover {
 	padding: 20px 10px;
 }
 
-.article img {
-	border: 1px solid #a4a4a4;
-}
-
-.article .img {
-	text-align: center;
-}
-
 .article p,
 .resume p {
 	padding: 5px 0;
@@ -252,6 +244,20 @@ a:hover {
 	font-size: 16px;
 	text-indent: 2em;
 	line-height: 2em;
+}
+
+.article .img {
+	text-align: center;
+	text-indent: 0em;
+}
+
+.article img {
+	border: 1px solid #a4a4a4;
+}
+
+.article .rsgc {
+	width: 680px;
+	border: none;
 }
 
 /* 新版小标题 */
