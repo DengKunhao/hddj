@@ -1,7 +1,7 @@
 /*
 //@files: 荒岛电竞俱乐部官方网站层叠样式表
 //@author: 荒岛电竞俱乐部信息技术中心
-//@date: 2022/4/23
+//@date: 2022/6/11
 */
 
 /* 通用样式 */
@@ -1432,7 +1432,14 @@ ul {
 }
 
 .zwgk li.center {
+	padding: 3px 0;
 	text-align: center;
+}
+
+.zwgk li.center:before {
+	width: 0px;
+	height: 0px;
+	border: 0px
 }
 
 /* 领导机构 */
