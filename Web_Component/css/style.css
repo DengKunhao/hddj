@@ -1,7 +1,7 @@
 /*
 //@files: 荒岛电竞俱乐部官方网站层叠样式表
 //@author: 荒岛电竞俱乐部信息技术中心
-//@date: 2022/6/11
+//@date: 2022/7/5
 */
 
 /* 通用样式 */
@@ -199,53 +199,43 @@ ul {
 }
 
 /* 导航栏 */
-.main-nav-box {
-	margin: 10px 0;
-}
-
 .main-nav {
 	width: 1100px;
-	margin: 0 auto;
-	text-align: center;
-	background: #4b98ec;
-	/* background-image: linear-gradient(to right,#0559b6,#4b98ec); */
+	margin: 10px auto;
+	background-image: linear-gradient(to right, #0559b6, #4b98ec);
 }
 
-.main-nav a {
-	padding: 0 20px;
-	display: inline-block;
-	line-height: 51px;
-	font-size: 25px;
-	font-family: 华文中宋, 微软雅黑;
-	color: #fff;
+.main-menu {
+	margin: 0 25px;
+	height: 50px;
+}
+
+.main-menu li {
+	float: left;
+	width: 149px;
+	line-height: 50px;
+	overflow: hidden;
+	border-right: 1px solid #e1e1e1;
+}
+
+.main-menu .end {
+	border-right: 0px;
+}
+
+.main-menu li a {
+	display: block;
+	color: #ffffff;
+	font-size: 22px;
+	font-family: Preferred_font;
+	text-align: center;
+}
+
+.main-menu li a:hover {
+	background: #338CE6;
 }
 
 .fa {
 	vertical-align: middle;
-}
-
-.main-nav .active,
-.main-nav a:hover {
-	/* background: #338CE6!important; */
-	border-bottom: 5px solid #FFFFFF;
-	background-color: transparent;
-	transition: all 0.3s linear;
-}
-
-.main-nav a:hover {
-	background: #338CE6;
-}
-
-.main-nav .separator {
-	padding: 0;
-	width: 2px;
-	height: 23px;
-	background: #FFFFFF;
-	vertical-align: text-bottom;
-}
-
-.main-nav .separator:hover {
-	pointer-events: none;
 }
 
 /* 新版大头条 */
@@ -715,7 +705,7 @@ ul {
 }
 
 .latest_report_live_head-content {
-	height: 345px;
+	height: 380px;
 }
 
 .zxbd_list {
@@ -783,161 +773,165 @@ ul {
 	width: 370px;
 }
 
-/* 队长办公会日历 */
-.schedule_title {
-	background-image: linear-gradient(-84deg, #1AB6FF 0, #1AB6FF 0, #028FFF 100%);
-	/* background: #4d98d3; */
-}
-
-.schedule_title p {
-	font-family: 华文行楷;
-	font-size: 28px;
-	color: #FFFFFF;
-	line-height: 50px;
-	text-align: center;
-}
-
-.schedule_line {
-	margin: 0 auto;
-	border-bottom: 1px solid #fff;
-}
-
-.schedule_content_list {
-	margin-bottom: 23px;
-}
-
-.schedule_content_list li {
+/* 战队会议日程 */
+.schedule {
 	position: relative;
-	background-image: linear-gradient(-84deg, #1AB6FF 0, #1AB6FF 0, #028FFF 100%);
-	/* background-color: #4d98d3; */
+	width: 370px;
+	height: 265px;
+	border: 1px solid #79c4e6;
+	background: url(../images/schedule_bg.png) 0 0 no-repeat;
 }
 
-.schedule_content_bottom_arrow {
-	position: absolute;
-	bottom: -10px;
-	left: 34px;
-	width: 0;
-	height: 0;
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-top: 10px solid #028FFF;
+.schedule_title {
+	margin: 10px 0 0 69px;
 }
 
-.schedule_content_list_left {
-	float: left;
-	width: 75px;
-	display: inline;
-	margin: 15px 0 0 11px;
-	text-align: center;
-}
-
-.schedule_content_list_left span {
-	display: block;
-	line-height: 33px;
-	color: #FFFFFF;
-	border: 2px solid;
-	border-radius: 10px;
-	font-family: 宋体;
-	font-size: 25px;
+.schedule_title em {
+	margin-left: 11px;
+	font-family: "microsoft yahei";
+	color: #fff;
+	font-size: 24px;
+	font-style: normal;
 	font-weight: bold;
 }
 
-.schedule_content_list_left em a {
-	font-family: "microsoft yahei";
-	font-size: 48px;
-	color: #fff;
-	font-style: normal;
-}
-
-.schedule_content_list_left em i {
-	font-size: 18px;
-	font-style: normal;
-}
-
-.schedule_content_list_right {
+.schedule_list {
 	float: left;
-	width: 224px;
-	height: 112px;
-	overflow: hidden;
-	margin-left: 26px;
-	margin-top: 9px;
-	display: inline;
+	margin-top: 20px;
+	width: 320px;
+	height: 215px;
 }
 
-.schedule_content_list_right p {
+.schedule_list li {
+	position: relative;
+	display: none;
+}
+
+.schedule_list_content {
+	margin: 15px 28px;
+	width: 264px;
+	height: 155px;
+	overflow: hidden;
+}
+
+.schedule_list_content p {
 	font-family: "microsoft yahei";
 	font-size: 16px;
 	line-height: 22px;
 	color: #fff;
-	text-align: center;
 }
 
-.schedule_content_list_right p.theme a {
+.schedule_list_content p.theme a {
 	color: #fff;
 }
 
 .schedule_time {
-	position: relative;
+	width: 80px;
+	height: 265px;
+	position: absolute;
+	right: -6px;
+	top: 0;
 }
 
-.schedule_day {
+.schedule_time-background_line {
+	content: '';
+	width: 1px;
+	height: 240px;
+	position: absolute;
+	left: 26px;
+	top: 12px;
+	z-index: 10;
+	background: #d7b26b;
+}
+
+.schedule_time_list {
+	width: 80px;
+	height: 210px;
 	position: relative;
 	overflow: hidden;
-	width: 335px;
-	height: 44px;
-	margin: 0 auto;
+	left: -24px;
+	top: 18px;
 }
 
-.schedule_day_list {
-	width: 10000px;
+.schedule_time_content {
 	position: absolute;
 	left: 0;
 	top: 0;
 }
-
-.schedule_day_list li {
-	float: left;
-	width: 47px;
-	line-height: 44px;
+		
+.schedule_time_content li {
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
 	vertical-align: middle;
-	font-family: "microsoft yahei";
-	font-size: 16px;
+	font-family: "æ–¹æ­£ä¸­é›…å®‹ç®€";
+	font-size: 14px;
 	text-align: center;
 	border-right: 1px solid #fff;
-}
-
-.schedule_day_list li:hover {
-	cursor: pointer;
-}
-
-.schedule_day_list li.day_list_active {
-	background-image: linear-gradient(-84deg, #1AB6FF 0, #1AB6FF 0, #028FFF 100%);
-}
-
-.btn_prev,
-.btn_next {
-	width: 10px;
-	height: 19px;
-	position: absolute;
-	top: 50%;
-	margin-top: -10px;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
 
+.schedule_time_content li a {
+	display: inline-block;
+	width: 56px;
+	color: #fff;
+	background-image: url(../images/schedule_date_circle.png);
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	padding-left: 14px;
+}
+
+.schedule_time_content li:hover {
+	cursor: pointer;
+}
+
+.schedule_time_content li.day_list_active {
+	background-image: url(../images/schedule_date_active_bg.png);
+}
+
+.schedule_time_content li.day_list_active a {
+	color: #fddfa0;
+	background-image: url(../images/schedule_date_active_circle.png);
+	background-position: 12px center;
+	padding-left: 14px;
+}
+
+.btn_prev,
+.btn_next {
+	width: 35px;
+	height: 25px;
+	position: absolute;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	left: 9px;
+}
+		
 .btn_prev:hover,
 .btn_next:hover {
 	cursor: pointer;
 }
-
+		
 .btn_prev {
-	left: 0;
-	background-image: url(../images/icon-rc_left.png);
+	top: 2px;
+	background-image: url(../images/schedule_date_arrow.png);
+	background-position: 0 0;
 }
-
+		
+.btn_prev:hover {
+	background-image: url(../images/schedule_date_arrow.png);
+	background-position: 0 -25px;
+}
+		
 .btn_next {
-	right: 0;
-	background-image: url(../images/icon-rc_right.png);
+	bottom: 2px;
+	background-image: url(../images/schedule_date_arrow.png);
+	background-position: 0 -50px;
+}
+		
+.btn_next:hover {
+	background-image: url(../images/schedule_date_arrow.png);
+	background-position: 0 -75px;
 }
 
 /* 直播平台、领导之窗、架构图表、代练平台和新人须知 */
