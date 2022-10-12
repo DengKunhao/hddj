@@ -138,6 +138,11 @@ a:hover {
 	/* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75); */
 }
 
+/* 政务数据集成页面专用css */
+.integration .article_content {
+    padding: 20px 50px;
+}
+
 /* 面包屑 */
 .crumb {
 	overflow: hidden;
@@ -256,7 +261,7 @@ a:hover {
 }
 
 .article .rsgc {
-	width: 680px;
+	width: 690px;
 	border: none;
 }
 
