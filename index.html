@@ -25,18 +25,24 @@
 		<!-- 大图滚动 -->
 		<link rel="stylesheet" type="text/css" href="Web_Component/css/swiper.css" />
 		<!-- 判断移动设备 -->
-		<script>
+		<!-- <script>
 			var isMobile = (/iPad|iPhone|Android|Windows Phone|Nokia/).test(navigator.userAgent);
 
 			if (isMobile) {
 				location.href = "#";
 			}
-		</script>
-		<!-- <style type="text/css">
-			html {
+		</script> -->
+		<style type="text/css">
+			/* html {
 				-webkit-filter: grayscale(100%);
-				}
-		</style> -->
+				} */
+			/* 临时通知弹窗 */
+			.popup .popup-content {
+				width: 810px;
+				height: 643px;
+				background: url(dynamic_data/popup/20230121.png) center top no-repeat;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- <audio autoplay="autoplay"><source src="Headlines.mp3"></audio> -->
@@ -87,9 +93,18 @@
 			<div class="slider-picture">
 				<div class="slider-carousel">
 					<!-- 大图滚动内容 -->
+					<!-- <div class="item" style="display:none">
+						<div class="pannel-image">
+							<a href="zdyw/2021-03-22.html" target="_blank"> <img src="slider_picture/2021/0322.png"></a>
+						</div>
+						<div class="subtitle">
+							<h6><a href="zdyw/2021-03-22.html" target="_blank">2023年3月22日晚上，荒岛电竞俱乐部举行三周年庆典 续写柠檬情发表重要讲话 孤独的枪手等出席</a></h6>
+						</div>
+						<div class="subtitle-background"></div>
+					</div> -->
 					<div class="item" style="display:none">
 						<div class="pannel-image">
-							<a href="zdyw/content.html#20230121" target="_blank"> <img src="slider_picture/2023/0121.png"></a>
+							<a href="zdyw/content.html#20230121" target="_blank"> <img src="dynamic_data/slider_picture/2023/0121.png"></a>
 						</div>
 						<div class="subtitle">
 							<h6><a href="zdyw/content.html#20230121" target="_blank">“金虎辞旧岁·金兔报春时” 荒岛电竞俱乐部队长续写柠檬情恭祝战队全体队友新春佳节快乐！</a></h6>
@@ -98,7 +113,7 @@
 					</div>
 					<div class="item" style="display:none">
 						<div class="pannel-image">
-							<a href="#" target="_blank"> <img src="slider_picture/2023/0101.png"></a>
+							<a href="#" target="_blank"> <img src="dynamic_data/slider_picture/2023/0101.png"></a>
 						</div>
 						<div class="subtitle">
 							<h6><a href="#" target="_blank">您好，2023！荒岛电竞俱乐部祝战队全体队友元旦快乐！</a></h6>
@@ -106,15 +121,6 @@
 						<div class="subtitle-background"></div>
 					</div>
 					<!-- <div class="item" style="display:none">
-						<div class="pannel-image">
-							<a href="zdyw/2021-03-22.html" target="_blank"> <img src="slider_picture/2021/0322.png"></a>
-						</div>
-						<div class="subtitle">
-							<h6><a href="zdyw/2021-03-22.html" target="_blank">2022年3月22日，荒岛电竞俱乐部举行二周年庆典 续写柠檬情发表重要讲话 孤独的枪手出席</a></h6>
-						</div>
-						<div class="subtitle-background"></div>
-					</div>
-					<div class="item" style="display:none">
 						<div class="pannel-image">
 							<a href="zdyw/2021-09-21.html" target="_blank"> <img src="slider_picture/2021/0921.png">
 							</a>
@@ -646,14 +652,14 @@
 		<!-- 返回顶部按钮 -->
 		<div class="back_to_top"><a>返回顶部</a></div>
 		<!-- 临时通知弹窗开始 -->
-		<!-- <div class="popup">
+		<div class="popup">
 		    <div class="popup-content">
-		        <div class="close-btn">
+		        <div class="close-button">
 		            <img src="Web_Component/images/popup_close.png"></div>
 		        <div class="close-reciprocal">5秒后自动关闭</div>
 		        <p>&nbsp;</p>
 		    </div>
-		</div> -->
+		</div>
 		<!-- 临时通知弹窗结束 -->
 		<!-- 新春对联 -->
 		<!-- <div class="couplet">
@@ -951,7 +957,7 @@
 		            $('.popup').hide()
 		        }
 		    }, 1000)
-		    $('.close-btn').click(function () {
+		    $('.close-button').click(function () {
 		        clearInterval(popupTimeout)
 		        $('.popup').hide()
 		    })
