@@ -360,7 +360,7 @@ ul {
 }
 
 .slider-carousel .subtitle-background {
-	background: url(../images/subtitle-background.png) 0 0 no-repeat;
+	background: url(../images/subtitle_bg.png) 0 0 no-repeat;
 	/* background-image: linear-gradient(90deg,#095be3 0,#198afc 100%); */
 	position: absolute;
 	/* position: initial; */
