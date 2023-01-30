@@ -1,8 +1,11 @@
 /*
 //@files: 荒岛电竞俱乐部官方网站层叠样式表
 //@author: 荒岛电竞俱乐部信息技术中心
-//@date: 2023/1/11
+//@date: 2023/1/31
 */
+
+/* linear-gradient样式大全 */
+/* linear-gradient(97.03deg,#a87fff 9.88%,#b384ff 9.89%,#4c9eff 102.13%) */
 
 /* 通用样式 */
 body,
@@ -1650,3 +1653,20 @@ ul {
 	top: 0;
 }
 /* 新春对联 end */
+
+/* 浏览器提示 start */
+.browser-tips {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 50;
+	width: 100%;
+	line-height: 50px;
+	border-top: 1px solid #e7e7e6;
+	border-bottom: 1px solid #e7e7e6;
+	background: #095BE3;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+}
+/* 浏览器提示 end */
