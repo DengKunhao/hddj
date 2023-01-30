@@ -13,7 +13,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 		<title>荒岛电竞俱乐部官方网站</title>
 		<meta name="others" content="页面生成时间 2022-06-01 00:00:00" />
-		<meta name="others" content="最后更新时间 2023-01-08 08:18:00" />
+		<meta name="others" content="最后更新时间 2023-01-30 08:18:00" />
 		<meta name="filepath" content="/home/index.html">
 		<!-- 重置 -->
 		<link rel="stylesheet" type="text/css" href="Web_Component/css/base.css">
@@ -557,8 +557,8 @@
 								<li class="center"><a href="zwgk/glgk/ldzc.html#jzdrc" target="_blank">副&emsp;队&emsp;长：酒醉断人肠</a></li>
 								<li class="center"><a href="zwgk/glgk/ldzc.html#caggl" target="_blank">副&emsp;队&emsp;长：长安归故里</a></li>
 								<li class="center"><a href="zwgk/glgk/ldzc.html#zwmrx" target="_blank">副&#8197;督&ensp;察&#8197;长：醉卧美人膝</a></li>
-								<li class="center"><a href="zwgk/glgk/ldzc.html#txlbz" target="_blank">秘&emsp;书&emsp;长：特训老班长</a></li>
 								<li class="center"><a href="zwgk/glgk/ldzc.html#blxns" target="_blank">队&#8197;长&ensp;助&#8197;理：北落想南升</a></li>
+								<li class="center"><a href="zwgk/glgk/ldzc.html#txlbz" target="_blank">副&#8197;秘&ensp;书&#8197;长，&emsp;&emsp;&emsp;&emsp;&emsp;<br>代理秘书长：特训老班长</a></li>
 								<li class="center"><a href="zwgk/glgk/ldzc.html#bzxll" target="_blank">副&#8197;秘&ensp;书&#8197;长：暴走小萝莉</a></li>
 								<li class="center"><a href="zwgk/glgk/ldzc.html#zmqdn" target="_blank">副&#8197;秘&ensp;书&#8197;长：醉美黔东南</a></li>
 								<h1><i class="iconfont icon-zhize" style="vertical-align: baseline;"></i>战队领导机构</h1>
@@ -656,7 +656,7 @@
 		    <div class="popup-content">
 		        <div class="close-button">
 		            <img src="Web_Component/images/popup_close.png"></div>
-		        <div class="close-reciprocal">5秒后自动关闭</div>
+		        <div class="close-reciprocal">3秒后自动关闭</div>
 		        <p>&nbsp;</p>
 		    </div>
 		</div>
@@ -667,15 +667,17 @@
 				<div class="close" onclick="$('.couplet-left').hide()">
 					<img style="cursor: pointer;" src="Web_Component/images/icon-popup_close.png" />
 				</div>
-				<img src="Web_Component/images/couplet-left.png" />
+				<img src="dynamic_data/couplet/left.png" />
 			</div>
 			<div class="couplet-right">
 				<div class="close" onclick="$('.couplet-right').hide()" style="text-align: right;">
 					<img style="cursor: pointer;" src="Web_Component/images/icon-popup_close.png" />
 				</div>
-				<img src="Web_Component/images/couplet-right.png" />
+				<img src="dynamic_data/couplet/right.png" />
 			</div>
 		</div> -->
+		<!-- 浏览器提示 -->
+		<!-- <div class="browser-tips">本页面更新至2023年12月31日</div> -->
 		<!-- 脚本语言 JavaScript -->
 		<script type="text/javascript" src="Web_Component/js/jquery1.12.4.min.js"></script>
 		<!-- 图片自动轮播(大图滚动) -->
@@ -947,7 +949,7 @@
 		</script>
 		<!-- 临时通知弹窗 -->
 		<script>
-		    var popupCount = 5
+		    var popupCount = 3
 		    var popupTimeout = setInterval(function () {
 		        if (popupCount > 0) {
 		            var str = popupCount + '秒后自动关闭'
