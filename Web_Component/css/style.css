@@ -65,7 +65,7 @@ a:hover {
 	font-family: "Preferred_font";
 	src: url("public/FZXBSJW3-3.woff") format("woff");
 	/* url("font/FZXBSJW3-2.ttf") format("truetype"),
-						url("font/FZXBSJW.svg#myFirstFont") format("svg"); */
+	url("font/FZXBSJW.svg#myFirstFont") format("svg"); */
 	font-style: normal;
 	font-weight: normal;
 }
@@ -143,11 +143,10 @@ ul {
 
 /* 顶部logo图片 */
 .logo {
-	position: relative;
-	padding-top: 180px;
+	height: 180px;
+	background-image: url(../images/banner-logo.png);
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-image: url(../images/banner-logo.png);
 	box-shadow: 0 0 10px #d2d2d2;
 }
 
@@ -159,6 +158,7 @@ ul {
 	height: 40px;
 	margin: 0 auto;
 	text-align: center;
+	/* background-image: linear-gradient(to right,#3a96ec 0,#1c2f6f 15%,#1c2f6f 85%,#3a96ec 100%); */
 	background-image: url(../images/lmdh_bg.png);
 	background-position: center;
 	z-index: 10000;
@@ -201,11 +201,55 @@ ul {
 	border-right: none;
 }
 
+/* 顶部横幅 */
+.top_banner {
+	width: 1100px;
+	height: 50px;
+	margin: 10px auto;
+	background-image: linear-gradient(to right,#e86034 0,#cd0004 15%,#cd0004 85%,#e86034 100%);
+	text-align: center;
+}
+
+.top_banner span {
+	line-height: 50px;
+	color: #fff;
+	animation: shadowing 1s ease-in-out infinite alternate;
+	font-size: 35px;
+	font-family: Preferred_font;
+	text-align: center;
+}
+
+@keyframes shadowing {
+	to {
+		color: yellow;
+	}
+}
+
+/* @keyframes shadowing {
+	to {
+		color: yellow;
+		text-shadow: 20px 0 70px yellow;
+	}
+}
+
+.top_banner span:nth-child(n + 2) {
+	animation-delay: 0.2s;
+}
+
+.top_banner span:nth-child(n + 3) {
+	animation-delay: 0.4s;
+}
+
+.top_banner span:nth-child(n + 4) {
+	animation-delay: 0.6s;
+} */
+
 /* 导航栏 */
 .main-nav {
 	width: 1100px;
 	margin: 10px auto;
-	background-image: linear-gradient(to right, #0559b6, #4b98ec);
+	background-image: linear-gradient(to right,#4b98ec 0,#0559b6 15%,#0559b6 85%,#4b98ec 100%);
+	/* background-image: linear-gradient(to right, #0559b6, #4b98ec); */
 }
 
 .main-nav .main-menu {
@@ -283,17 +327,10 @@ ul {
 	padding: 0 20px;
 }
 
-.line {
-	width: 100%;
-	height: 1px;
-	margin: 10px auto;
-	background: linear-gradient(45deg, #ff0000 0%, #ffb600 11%, #fff600 22%, #a5ff00 33%, #00a9ff 44%, #0400ff 55%, #8a00fc 66%, #ff00e9 77%, #ff0059 88%, #ff0000 100%);
-}
-
 /* 大图滚动 */
 .slider-picture {
 	width: 1100px;
-	margin: 0 auto 25px;
+	margin: 25px auto;
 }
 
 /* slider-carousel(独立CSS文件改版整合导入) */
@@ -449,12 +486,12 @@ ul {
 	width: 695px;
 }
 
-/* 当前时间、队历和最新发布 */
+/* 当前时间、队历、最新发布、战队要闻和政务专题共用样式 */
 .current_time,
 .team_calendar,
-.zxfb {
-	height: 50px;
-	padding: 0 30px;
+.zxfb,
+.latest_report_live,
+.special_column {
 	margin: 10px 0;
 	box-shadow: 0 0 10px #ccc;
 	background-color: #fff;
@@ -490,7 +527,7 @@ ul {
 }
 
 .team_calendar {
-	height: 178px;
+	height: 150px;
 	/* background-color: rgba(221, 221, 221, 0.6); */
 }
 
@@ -506,8 +543,6 @@ ul {
 }
 
 .calendar_subtitle {
-	height: 123px;
-	padding-bottom: 5px;
 	line-height: 30px;
 	text-align: center;
 }
@@ -534,7 +569,7 @@ ul {
 .zxfb-left .icon {
 	height: 50px;
 	width: 100%;
-	color: #0F60DA;
+	color: #095BE3;
 }
 
 .zxfb-left .icon i {
@@ -545,7 +580,7 @@ ul {
 	font-size: 20px;
 	font-family: 华文中宋, 宋体;
 	font-weight: bold;
-	color: #0F60DA;
+	color: #095BE3;
 }
 
 .zxfb-right {
@@ -588,12 +623,13 @@ ul {
 	width: 10px;
 	height: 10px;
 	/* border-radius: 50%; */
-	background: #0f60da;
+	background: #095BE3;
 }
 
 /* 最新报道 */
 .latest_report_live {
-	margin-bottom: 25px;
+	margin: 10px auto;
+	padding: 10px;
 }
 
 .latest_report_live_head {
@@ -604,7 +640,7 @@ ul {
 .latest_report_live_head-logo {
 	float: left;
 	height: 36px;
-	/* background: #0f60da;
+	/* background: #095BE3;
 	border-radius: 10px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px; */
@@ -622,7 +658,7 @@ ul {
 }
 
 .hover {
-	background: #0F60DA;
+	background: #095BE3;
 	color: #FFFFFF !important;
 	/* border-bottom: 5px solid rgb(202, 180, 132); */
 }
@@ -688,7 +724,7 @@ ul {
 	top: 15px;
 	width: 6px;
 	height: 6px;
-	border: 3px #0f60da solid;
+	border: 3px #095BE3 solid;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -696,8 +732,8 @@ ul {
 }
 
 .latest_report_live_head-content li:hover:before {
-	background:#0f60da/* #e15e55 */;
-	border: 3px #0f60da solid
+	background:#095BE3/* #e15e55 */;
+	border: 3px #095BE3 solid
 }
 
 .latest_report_live_head-content li a {
@@ -728,7 +764,6 @@ ul {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background: url(../images/zwzt_bg.png) center center no-repeat;
 }
 
 .special_column .title {
@@ -752,7 +787,7 @@ ul {
     top: 0;
     width: 4px;
     height: 129px;
-    background: #2c6de5;
+    background: #095BE3;
 }
 
 .special_column .title:after {
@@ -765,13 +800,13 @@ ul {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background: #2c6de5;
+    background: #095BE3;
 }
 
 .special_column .title .cn {
     font-size: 24px;
     line-height: 30px;
-    color: #1686d9;
+    color: #095BE3;
 }
 
 .special_column .title .en {
@@ -1107,7 +1142,7 @@ ul {
 
 .information_button_box2 a.button3 {
 	background-image: linear-gradient(90deg, #19dbb4 2%, #79beff);
-	background-image: linear-gradient(90deg, #0f60da 0, #4969f0 100%);
+	background-image: linear-gradient(90deg, #095BE3 0, #4969f0 100%);
 	margin-right: 2px;
 }
 
@@ -1173,7 +1208,7 @@ ul {
 	font-size: 16px;
 	line-height: 24px;
 	background: url(http://www.xinhuanet.com/2021homepro/images/nolive-bg.jpg);
-	background-image: linear-gradient(90deg, #0f60da 0, #4969f0 100%);
+	background-image: linear-gradient(90deg, #095BE3 0, #4969f0 100%);
 }
 
 .video-button {
@@ -1202,22 +1237,58 @@ ul {
 	width: 1100px;
 }
 
-/* 政务公开横幅标题(多项共用) */
-.title-txt {
-	width: 1100px;
-	height: auto;
-	margin: 15px auto;
-	/* background-image: linear-gradient(-84deg,#1AB6FF 0,#1AB6FF 0,#028FFF 100%); */
-	background: url(../images/title-txt_bg.png) no-repeat center;
+/* 通用横幅标题 start */
+.share_title {
+	position: relative;
+    width: 100%;
+	margin: 25px auto;
+	text-align: center;
 }
 
-.title-txt h1 {
-	font-size: 39px;
-	font-family: "华文行楷";
-	color: #0372DD;
-	text-align: center;
-	line-height: 68px;
+.share_title-background_line {
+	position: absolute;
+    top: 18px;
+    width: 100%;
+    height: 10px;
+	border-top: 3px solid #095BE3;
+	border-bottom: 3px solid #095BE3;
+	/* background-color: #095BE3; */
+	/* background-image: linear-gradient(45deg, #ff0000 0%, #ffb600 11%, #fff600 22%, #a5ff00 33%, #00a9ff 44%, #0400ff 55%, #8a00fc 66%, #ff00e9 77%, #ff0059 88%, #ff0000 100%); */
 }
+
+.share_title-text {
+	position: relative;
+	display: inline-block;
+	padding: 0 15px;
+	background-color: #fff !important;
+	color: #FFFFFF;
+	font-size: 50px;
+	font-family: Preferred_font;
+	/* font-weight: bold; */
+	text-align: center;
+}
+
+.share_title-text span {
+	margin: 0 5px;
+	padding: 0 5px;
+	border-radius: 10px;
+	background-color: #095BE3;
+	line-height: 52px;
+}
+
+/* .share_title-text span:nth-child(1) {
+	background-image: linear-gradient(to right,#e86034 0,#cd0004 17%,#cd0004 83%,#e86034 100%);
+}
+.share_title-text span:nth-child(2) {
+	background-image: linear-gradient(to right,#e86034 0,#cd0004 17%,#cd0004 83%,#e86034 100%);
+}
+.share_title-text span:nth-child(3) {
+	background-image: linear-gradient(-84deg,#1AB6FF 0,#1AB6FF 0,#028FFF 100%);
+}
+.share_title-ext span:nth-child(4) {
+	background-image: linear-gradient(-84deg,#1AB6FF 0,#1AB6FF 0,#028FFF 100%);
+} */
+/* 通用横幅标题 End */
 
 .comprehensive_information-body {
 	position: relative;
@@ -1413,7 +1484,7 @@ ul {
 	top: 13px;
 	width: 6px;
 	height: 6px;
-	border: 3px #0f60da solid;
+	border: 3px #095BE3 solid;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -1421,8 +1492,8 @@ ul {
 }
 
 .zwgk li:hover:before {
-	background: #0f60da;
-	border: 3px #0f60da solid
+	background: #095BE3;
+	border: 3px #095BE3 solid
 }
 
 .zwgk li.center {
@@ -1457,7 +1528,7 @@ ul {
 	position: relative;
 	bottom: -1px;
 	display: inline-block;
-	border-bottom: 2px solid #0f60da;
+	border-bottom: 2px solid #095BE3;
 	padding: 0 10px;
 	font-family: 微软雅黑;
 }
@@ -1481,7 +1552,7 @@ ul {
 
 .footer {
 	margin: 0 auto;
-	border-top: 8px solid #0f60da;
+	border-top: 8px solid #095BE3;
 	overflow: hidden;
 }
 
@@ -1493,6 +1564,10 @@ ul {
 
 .footer_content_lf {
 	text-align: center;
+}
+
+#logo {
+	margin-top: 22px;
 }
 
 .footer_content_rf .fl {
@@ -1549,11 +1624,6 @@ ul {
 	background: #E0E0E0;
 	margin-left: 8px;
 }
-
-#logo {
-	margin-top: 25px;
-}
-
 /* 底部 end */
 
 /* 返回顶部按钮 start */
