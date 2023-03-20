@@ -62,7 +62,7 @@ a:hover {
 }
 
 @font-face {
-	font-family: "Preferred_font";
+	font-family: "FZXBSJW";
 	src: url("public/FZXBSJW3-3.woff") format("woff");
 	/* url("font/FZXBSJW3-2.ttf") format("truetype"),
 	url("font/FZXBSJW.svg#myFirstFont") format("svg"); */
@@ -71,7 +71,7 @@ a:hover {
 }
 
 @font-face {
-	font-family: "Preferred_font";
+	font-family: "FZXBSJW";
 	src: url("public/FZXBSJW3-3.woff");
 	/* IE9 */
 	font-style: normal;
@@ -215,7 +215,7 @@ ul {
 	color: #fff;
 	animation: shadowing 1s ease-in-out infinite alternate;
 	font-size: 35px;
-	font-family: Preferred_font;
+	font-family: FZXBSJW;
 	text-align: center;
 }
 
@@ -273,7 +273,7 @@ ul {
 	display: block;
 	color: #ffffff;
 	font-size: 22px;
-	font-family: Preferred_font;
+	font-family: FZXBSJW;
 	text-align: center;
 }
 
@@ -316,7 +316,7 @@ ul {
 
 .headlines a {
 	color: #095be3;
-	font-family: 华文行楷,Preferred_font,宋体;
+	font-family: 华文行楷,FZXBSJW,宋体;
 }
 
 .headlines-fl a {
@@ -652,7 +652,7 @@ ul {
 	padding: 0 10px;
 	border: 1px solid #f0f0f0;
 	border-radius: 10px;
-	font-family: 华文中宋, 微软雅黑;
+	font-family: 华文中宋,FZXBSJW,宋体;
 	font-size: 25px;
 	color: #9f9f9f;
 }
@@ -880,7 +880,7 @@ ul {
 	background: #095BE3;
 	color: #FFFFFF;
 	font-size: 25px;
-	font-family: Preferred_font;
+	font-family: FZXBSJW;
 }
 
 .leader .xxnmq {
@@ -1263,7 +1263,7 @@ ul {
 	background-color: #fff !important;
 	color: #FFFFFF;
 	font-size: 50px;
-	font-family: Preferred_font;
+	font-family: FZXBSJW;
 	/* font-weight: bold; */
 	text-align: center;
 }
