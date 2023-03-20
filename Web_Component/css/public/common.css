@@ -39,7 +39,7 @@ li {
 }
 
 @font-face {
-	font-family: "Preferred_font";
+	font-family: "FZXBSJW";
 	src: url("FZXBSJW3-3.woff") format("woff");
 	/* url("font/FZXBSJW3-2.ttf") format("truetype"),
 						url("font/FZXBSJW.svg#myFirstFont") format("svg"); */
@@ -48,7 +48,7 @@ li {
 }
 
 @font-face {
-	font-family: "Preferred_font";
+	font-family: "FZXBSJW";
 	src: url("FZXBSJW3-3.woff");
 	/* IE9 */
 	font-style: normal;
@@ -223,7 +223,7 @@ a:hover {
 	line-height: 50px;
 	/* font-weight: normal; */
 	font-size: 35px;
-	font-family: 宋体,Preferred_font;
+	font-family: 宋体,FZXBSJW;
 	text-align: center;
 }
 
@@ -283,7 +283,7 @@ a:hover {
 	margin: 20px 0;
 	width: 100%;
 	line-height: 30px;
-	font-family: Preferred_font;
+	font-family: FZXBSJW;
 	font-size: 20px !important;
 	background: #fbfafa;
 }
@@ -291,7 +291,7 @@ a:hover {
 .subtitle span {
 	padding: 0 10px;
 	border-left: 10px solid #095BE3;
-	font-family: Preferred_font;
+	font-family: FZXBSJW;
 	/* background: #FFF !important; */
 }
 
@@ -450,7 +450,7 @@ p.msz span {
 
 .name-post {
 	text-align: center;
-	font-family: Preferred_font;
+	font-family: FZXBSJW;
 }
 
 .name {
