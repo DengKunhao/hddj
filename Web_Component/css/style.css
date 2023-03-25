@@ -888,6 +888,11 @@ ul {
     margin-bottom: 20px;
 }
 
+.leader .xxnmq li img{
+    width: 168px;
+    height: 208px;
+}
+
 .leader .list-photos {
     font-size: 18px;
     overflow: hidden;
@@ -897,6 +902,11 @@ ul {
     float: left;
     width: 50%;
     margin-bottom: 15px;
+}
+
+.leader .list-photos li img {
+    width: 100px;
+    height: 123px;
 }
 
 /* 战队会议日程 */
