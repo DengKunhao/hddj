@@ -138,7 +138,7 @@ body {
 }
 
 .information .Hyperlink_Keys > li a:hover {
-	color: #095BE3;
+	color: yellow;
 }
 
 .information .Hyperlink_Keys > li i {
