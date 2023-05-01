@@ -285,19 +285,17 @@ ul {
 	vertical-align: middle;
 }
 
-/* 大头条 */
-.headlines {
+/* 大头条 Start*/
+.big_headline {
 	width: 1100px;
-	height: 100px;
 	margin: 25px auto;
 	position: relative;
 	text-align: center;
-	padding-bottom: 5px;
 	background: #f5f5f5;
 	border: 1px solid #c2c2c2;
 }
 
-.headlines:before {
+.big_headline:before {
 	position: absolute;
 	left: -1px;
 	top: -11px;
@@ -308,26 +306,31 @@ ul {
 	background: url(../images/icon-headlines.png) -125px -86px no-repeat;
 }
 
-.headlines h1 {
-	margin: 13px 0;
-	line-height: 45px;
-	font-size: 45px;
-}
-
-.headlines a {
+.big_headline a {
 	color: #095be3;
 	font-family: 华文行楷,FZXBSJW,宋体;
+}
+
+.headlines,
+.headlines-fl{
+	margin: 10px 0;
+}
+
+.headlines {
+	line-height: 50px;
+	font-size: 45px;
 }
 
 .headlines-fl a {
 	display: inline-block;
 	line-height: 20px;
 	font-size: 20px;
-	font-family: 华文中宋, 宋体, 微软雅黑;
+	font-family: 华文中宋, 宋体;
 	padding: 0 20px;
 }
+/* 大头条 End*/
 
-/* 大图滚动 */
+/* 大图滚动 Start */
 .slider-picture {
 	width: 1100px;
 	margin: 25px auto;
