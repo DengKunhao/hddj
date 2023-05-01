@@ -9,7 +9,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 		<title>荒岛电竞俱乐部官方网站</title>
 		<meta name="others" content="荒岛电竞俱乐部官方网站2023版首页" />
-		<meta name="others" content="最后更新时间 2023-04-12 20:08:00" />
+		<meta name="others" content="最后更新时间 2023-05-01 20:08:00" />
 		<meta name="filepath" content="/home/index.html" />
 		<!-- 重置 -->
 		<link rel="stylesheet" type="text/css" href="Web_Component/css/base.css">
@@ -30,6 +30,60 @@
 			if (isMobile) {
 				location.href = "#";
 			}
+		</script> -->
+		<!-- <script>
+		var isPC=IsPC();//获取是否为PC端
+		if(isPC){//如果是PC端加载PC的js和css
+			
+		}else{//如果是移动端加载移动端的js和css
+			$(".stylefile").remove();
+			var rootpath='/';
+			dynamicLoadCss(rootpath+'images/mobile_base20200818.css')
+			dynamicLoadCss(rootpath+'images/mobile_swiper.min.css')
+			dynamicLoadCss(rootpath+'images/mobile_v2019.css')
+			dynamicLoadJs(rootpath+'images/mobile.js')	
+			dynamicLoadJs(rootpath+'images/mobile_swiper.min.js')
+		        dynamicLoadJs(rootpath+'images/mobile_index.js')
+		}
+		
+		function IsPC() {//获取设备是否为PC的方法
+			var userAgentInfo = navigator.userAgent;
+			var Agents = ["Android", "iPhone",
+						"SymbianOS", "Windows Phone",
+						"iPad", "iPod"];
+			var flag = true;
+			for (var v = 0; v < Agents.length; v++) {
+				if (userAgentInfo.indexOf(Agents[v]) >= 0) {
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+		};
+		
+		function dynamicLoadCss(url) {//加载css方法
+			var head = document.getElementsByTagName('head')[0];
+			var link = document.createElement('link');
+			link.type='text/css';
+			link.rel = 'stylesheet';
+			link.href = url;
+			head.appendChild(link);
+		}
+		function dynamicLoadJs(url, callback) {//加载js方法
+			var head = document.getElementsByTagName('head')[0];
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = url;
+			if(typeof(callback)=='function'){
+				script.onload = script.onreadystatechange = function () {
+					if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete"){
+						callback();
+						script.onload = script.onreadystatechange = null;
+					}
+				};
+			}
+			head.appendChild(script);
+		}
 		</script> -->
 		<style type="text/css">
 			/* html {
@@ -65,9 +119,9 @@
 		<div class="hddj-club">
 			<div class="logo"></div>
 			<!-- 顶部横幅 Start -->
-			<div class="top_banner">
+			<!-- <div class="top_banner">
 				<span>热烈祝贺荒岛电竞俱乐部第四次全队代表大会胜利召开！</span>
-			</div>
+			</div> -->
 			<!-- 顶部横幅 End -->
 			<!-- 导航栏 Start -->
 			<div class="main-nav">
@@ -84,10 +138,10 @@
 			</div>
 			<!-- 导航栏 End -->
 			<!-- 大头条 Start -->
-			<div class="headlines" id="dtt">
-			    <h1 style="font-size: 35px;">
-					<a href="zwgk/jcgk/zdhy/cwhy/content.html#4-1">续写柠檬情主持召开荒岛电竞俱乐部四届第一次战队常务会议</a>
-				</h1>
+			<div class="big_headline" id="dtt">
+				<div class="headlines" style="font-size: 35px;">
+					<a href="zwgk/jcgk/zdhy/dzbghy/content.html#4-1">续写柠檬情主持召开荒岛电竞俱乐部四届第一次队长办公会议<!-- <br> --></a>
+				</div>
 				<div class="headlines-fl">
 					<a style="font-size: 20px;" href="zdyw/content.html#20230401">4月1日下午 战队办公厅召开全厅干部会议 北落想南升出席会议并宣布有关人事任免决定 暴走小萝莉主持</a>
 					<!-- <a>｜</a> -->
@@ -100,7 +154,16 @@
 					<!-- 大图滚动内容 -->
 					<div class="item" style="display:none">
 						<div class="pannel-image">
-							<a href="zwgk/jcgk/zdhy/qthy/content.html#4-1" target="_blank"> <img src="dynamic_data/slider_picture/news_flash.png"></a>
+							<a><img src="dynamic_data/slider_picture/special_holiday/qingming.png"></a>
+						</div>
+						<div class="subtitle">
+							<h6><a>清明节，笑对未来，愿你的人生春暖花开！</a></h6>
+						</div>
+						<div class="subtitle-background"></div>
+					</div>
+					<div class="item" style="display:none">
+						<div class="pannel-image">
+							<a href="zwgk/jcgk/zdhy/qthy/content.html#4-1" target="_blank"> <img src="dynamic_data/slider_picture/news.png"></a>
 						</div>
 						<div class="subtitle">
 							<h6><a href="zwgk/jcgk/zdhy/qthy/content.html#4-1" target="_blank">续写柠檬情主持召开荒岛电竞俱乐部新一届战队政治局第一次全体会议</a></h6>
@@ -109,7 +172,7 @@
 					</div>
 					<div class="item" style="display:none">
 						<div class="pannel-image">
-							<a href="zdyw/2021-03-22.html" target="_blank"> <img src="dynamic_data/slider_picture/news_flash.png"></a>
+							<a href="zdyw/2021-03-22.html" target="_blank"> <img src="dynamic_data/slider_picture/news.png"></a>
 						</div>
 						<div class="subtitle">
 							<h6><a href="zdyw/2021-03-22.html" target="_blank">3月22日晚，荒岛电竞俱乐部举行三周年庆典 队长续写柠檬情发表重要讲话 孤独的枪手等战队领导人出席</a></h6>
@@ -127,31 +190,13 @@
 					</div>
 					<div class="item" style="display:none">
 						<div class="pannel-image">
-							<a> <img src="dynamic_data/slider_picture/2023/0322-1.png"></a>
+							<a><img src="dynamic_data/slider_picture/2023/0322-1.png"></a>
 						</div>
 						<div class="subtitle">
 							<h6><a href="zwzt/Team_Congress/4/special_report/content_2.html" target="_blank">荒岛电竞俱乐部第四次全队代表大会选举产生新一届战队政治局，续写柠檬情等7人当选为战队政治局委员</a></h6>
 						</div>
 						<div class="subtitle-background"></div>
 					</div>
-					<div class="item" style="display:none">
-						<div class="pannel-image">
-							<a href="zwzt/Team_Congress/4/special_report/content_1.html" target="_blank"> <img src="dynamic_data/slider_picture/news_flash.png""></a>
-						</div>
-						<div class="subtitle">
-							<h6><a href="zwzt/Team_Congress/4/special_report/content_1.html" target="_blank">荒岛电竞俱乐部第四次全队代表大会开幕 续写柠檬情作战队工作报告</a></h6>
-						</div>
-						<div class="subtitle-background"></div>
-					</div>
-					<!-- <div class="item" style="display:none">
-						<div class="pannel-image">
-							<a> <img src="dynamic_data/slider_picture/special_holiday/yuanxiao.png"></a>
-						</div>
-						<div class="subtitle">
-							<h6><a href="zdyw/2021-09-21.html" target="_blank">荒岛电竞俱乐部队长续写柠檬情送来元宵祝福：盼平安喜乐，愿人间团圆！荒岛电竞俱乐部与你共度元宵！</a></h6>
-						</div>
-						<div class="subtitle-background"></div>
-					</div> -->
 					<!-- <div class="item" style="display:none">
 						<div class="pannel-image">
 							<a href="#" target="_blank"> <img src="slider_picture/2021/0614.png"></a>
@@ -249,11 +294,11 @@
 						<!-- 内容 -->
 						<ul class="latest_report_live_head-content zxbd_list current_list">
 							<!-- <script src="zdyw/news.js"></script> -->
+							<li><a href="zwgk/jcgk/zdhy/dzbghy/content.html#4-1">续写柠檬情主持召开荒岛电竞俱乐部四届第一次队长办公会议 研究有关人事任免事项等</a><span class="date">2023-04-28</span></li>
 							<li><a href="zwgk/jcgk/zdhy/cwhy/content.html#4-1">续写柠檬情主持召开荒岛电竞俱乐部四届第一次战队常务会议 研究2023年战队工作任务等事项</a><span class="date">2023-03-28</span></li>
 							<li><a href="zwgk/jcgk/zdhy/qthy/content.html#4-1">续写柠檬情主持召开荒岛电竞俱乐部四届第一次战队全体会议 选举新一届战队副队长等</a><span class="date">2023-03-22</span></li>
 							<li><a href="zwgk/jcgk/zdhy/qthy/content.html#3-6">续写柠檬情主持召开荒岛电竞俱乐部三届第六次战队全体会议 讨论即将提请第四次全队代表大会审议的《战队工作报告》等</a><span class="date">2023-02-28</span></li>
 							<li><a href="zwgk/jcgk/zdhy/dzbghy/content.html#3-5">续写柠檬情主持召开荒岛电竞俱乐部三届第五次队长办公会议 研究有关人事任免事项等</a><span class="date">2023-02-18</span></li>
-							<li><a href="zwgk/jcgk/zdhy/cwhy/content.html#3-6">续写柠檬情主持召开荒岛电竞俱乐部三届第六次战队常务会议 研究战队工作报告稿</a><span class="date">2023-01-31</span></li>
 						</ul>
 						<ul class="latest_report_live_head-content zxbd_list">
 							<li><a href="tzgg/20210630.html">荒岛电竞俱乐部新人须知</a><span class="date">2021-06-30</span></li>
@@ -528,12 +573,8 @@
 								<h1><i class="iconfont icon-huiyi" style="font-size: 35px;"></i>战队会议</h1>
 								<h2><a href="zwgk/jcgk/zdhy/dzbghy/index.html">队长办公会议</a></h2>
 								<h3>&emsp;&emsp;队长办公会议由队长或委托常务副队长召集，由队长主持，一般每月召开一次，必要时随时召开。队长办公会议由队长、副队长、秘书长组成。</h3>
-								<h4>第三届战队政治局任期</h4>
-								<li><a href="zwgk/jcgk/zdhy/dzbghy/content.html#3-5">续写柠檬情主持召开荒岛电竞俱乐部三届第五次队长办公会议 研究有关人事任免事项等</a><span class="date">2023-02-18</span></li>
-								<li><a href="zwgk/jcgk/zdhy/dzbghy/content.html#3-4">续写柠檬情主持召开荒岛电竞俱乐部三届第四次队长办公会议 研究有关人事任免事项等</a><span class="date">2022-11-11</span></li>
-								<li><a href="zwgk/jcgk/zdhy/dzbghy/content.html#3-3">续写柠檬情主持召开荒岛电竞俱乐部三届第三次队长办公会议 研究有关人事任免事项等</a><span class="date">2022-09-09</span></li>
-								<li><a href="zwgk/jcgk/zdhy/dzbghy/content.html#3-2">续写柠檬情主持召开荒岛电竞俱乐部三届第二次队长办公会议 研究有关人事任免事项等</a><span class="date">2022-05-18</span></li>
-								<li><a href="zwgk/jcgk/zdhy/dzbghy/content.html#3-1">续写柠檬情主持召开荒岛电竞俱乐部三届第一次队长办公会议 研究有关人事任免事项等</a><span class="date">2022-04-28</span></li>
+								<h4>第四届战队政治局任期</h4>
+								<li><a href="zwgk/jcgk/zdhy/dzbghy/content.html#3-1">续写柠檬情主持召开荒岛电竞俱乐部四届第一次队长办公会议 研究有关人事任免事项等</a><span class="date">2023-04-28</span></li>
 								<h2><a href="zwgk/jcgk/zdhy/cwhy/index.html">战队常务会议</a></h2>
 								<h3>&emsp;&emsp;战队常务会议由队长或委托常务副队长通知战队办公厅召集，由队长或委托常务副队长主持，一般每季度召开一次，必要时随时召开。战队常务会议由战队政治局委员组成。根据需要可安排战队政治局候补委员、战队有关部门负责人列席。</h3>
 								<h4>第四届战队政治局任期</h4>
@@ -565,11 +606,12 @@
 								<li class="center"><a href="zwgk/glgk/ldzc.html#yyzxs" target="_blank">副&#8197;秘&ensp;书&#8197;长：烟雨醉相思</a></li>
 								<li class="center"><a href="zwgk/glgk/ldzc.html#kkyzg" target="_blank">副&#8197;秘&ensp;书&#8197;长：可可幼稚鬼</a></li>
 								<li class="center"><a href="zwgk/glgk/ldzc.html#wrdsl" target="_blank">副&#8197;秘&ensp;书&#8197;长：温柔的杀戮</a></li>
-								<h1><i class="iconfont icon-zhize" style="vertical-align: baseline;"></i>战队领导机构</h1>
+								<h1><i class="iconfont icon-zhize" style="vertical-align: baseline;"></i>战队机构</h1>
 								<!-- <h2>荒岛电竞俱乐部战队政治局</h2> -->
-									<li class="center"><a href="zwgk/glgk/ldjg/qddbdh.html" target="_blank">荒岛电竞俱乐部全队代表大会</a></li>
+									<!-- <li class="center"><a href="zwgk/glgk/ldjg/qddbdh.html" target="_blank">荒岛电竞俱乐部全队代表大会</a></li> -->
 									<li class="center"><a href="zwgk/glgk/ldjg/zdzzj.html" target="_blank">荒岛电竞俱乐部战队政治局</a></li>
-									<li class="center"><a href="zwgk/glgk/ldjg/zdzzjwymd.html" target="_blank">荒岛电竞俱乐部战队政治局委员、候补委员名单</a></li>
+									<li class="center"><a href="zwgk/glgk/zdjg/zdbgt.html" target="_blank">荒岛电竞俱乐部战队办公厅</a></li>
+									<!-- <li class="center"><a href="zwgk/glgk/ldjg/zdzzjwymd.html" target="_blank">荒岛电竞俱乐部战队政治局委员、候补委员名单</a></li> -->
 								<h1><i class="iconfont icon-renshi" style="vertical-align: baseline;"></i>人事信息</h1>
 								<h2><a href="zwgk/glgk/rsxx/rqgs.html">任前公示</a></h2>
 								<h2><a href="zwgk/glgk/rsxx/rmxx.html">任免信息</a></h2>
