@@ -270,6 +270,41 @@ a:hover {
 	border: none;
 }
 
+/* 项目标题 */
+.project_title {
+	position: relative;
+}	
+
+.project_title:before {	   
+	left: 0;	
+}	
+
+.project_title:after {
+	right: 0;	
+}	
+
+.project_title:before,
+.project_title:after {
+	content: '';
+	display: block;	
+	position: absolute;	    
+	top: 15px;	    
+	width: 30%;	    
+	height: 7px;	    
+	border-top: 3px #095BE3 solid;		
+	border-bottom: 3px #095BE3 solid;	
+}
+
+.project_title .text {
+	width: 300px; 
+	margin: 10px auto; 
+	padding: 10px 0;
+	text-align: center;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: #095BE3 6px 6px 0px 0px;
+}
+
 /* 新版小标题 */
 /* .subtitle {
 	margin: 20px 0;
@@ -323,6 +358,65 @@ a:hover {
 	left: 100px;
 	background-color: #e6e6e6;
 } */
+
+/* 战队机构小标题 */
+.zdjg_subtitle {
+	height: 12px;
+	margin: 10px 0;
+	font-size: 18px;
+	color: #095be3;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.zdjg_subtitle span {
+    width: 90px;
+	padding: 0 10px;
+    line-height: 24px;
+    border-left: 5px solid #095be3;
+	background: #fff;
+	display: block;
+	text-align: center;
+}
+
+/* 最新列表 */
+.new_list {
+	margin: 0 5px;
+}
+
+.new_list li {
+	height: 28px;
+	padding-left: 10px;
+	margin: 5px 0;
+	line-height: 28px;
+	position: relative;
+	border-bottom: 1px dashed #bfbfbf;
+}
+
+.new_list li:before {
+	content: "";
+	width: 3px;
+	height: 3px;
+	background: #888;
+	left: 0;
+	top: 13px;
+	z-index: 1;
+	position: absolute;
+}
+
+.new_list a {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 92%;
+	color: #4c4c4c;
+}
+
+.new_list li .date {
+	float: right;
+	font-size: 12px;
+	color: #4c4c4c;
+}
 
 /* 领导之窗 */
 .ldzc {
@@ -699,111 +793,6 @@ p.msz span {
 
 .box3 ul li a:hover {
 	color: #095BE3;
-}
-
-/* 机构设置 */
-.zdjg .title {
-    position: relative;
-    height: 50px;
-    background: url(../../images/public/zdjg_title.png) no-repeat;
-    background-size: 100% 100%;
-    margin: 10px auto;
-}
-
-.zdjg .title span {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 18px;
-    color: #FFFFFF;
-    line-height: 50px;
-}
-
-.zdjg .title a {
-    color: #FFFFFF;
-}
-
-.zdjg .zcbm {
-    border: 1px solid #e5e5e5;
-    padding: 20px 0px;
-}
-
-.zdjg .zcbm .bmmc {
-    width: 96%;
-    margin: 0 auto;
-    font-size: 0;
-}
-
-.zdjg .zcbm .bmmc a {
-    display: inline-block;
-    width: 25%;
-    font-size: 14px;
-    line-height: 40px;
-    border-bottom: 1px dotted #e6e6e6;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-
-.zdjg .zcbm .bmmc span {
-    width: 8px;
-    height: 8px;
-    background: #095be3;
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.zdjg .zcbm .bmxx {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 15px;
-}
-
-.zdjg .zcbm .bmxx span {
-    font-size: 14px;
-    line-height: 35px;
-    text-indent: 28px;
-}
-
-/* 最新列表 */
-.new_list {
-	margin: 0 5px;
-}
-
-.new_list li {
-	height: 28px;
-	padding-left: 10px;
-	margin: 5px 0;
-	line-height: 28px;
-	position: relative;
-	border-bottom: 1px dashed #bfbfbf;
-}
-
-.new_list li:before {
-	content: "";
-	width: 3px;
-	height: 3px;
-	background: #888;
-	left: 0;
-	top: 13px;
-	z-index: 1;
-	position: absolute;
-}
-
-.new_list a {
-	float: left;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	max-width: 92%;
-	color: #4c4c4c;
-}
-
-.new_list li .date {
-	float: right;
-	font-size: 12px;
-	color: #4c4c4c;
 }
 
 /* 底部 */
